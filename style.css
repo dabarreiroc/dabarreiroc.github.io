@@ -587,68 +587,23 @@ a{
     }
 
     /* DESIGNS SECTION */
-    #designs .cards 
+    #designs  
     {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-            "card1 card2"
-            "card3 card4"
-            "card5 . ";
+        background-position: 45% 50%;
     }
 
-    .cards .card .imgbx
-    {
-        transform: translateY(10%);
-        transition: 0.5s;
+    #designs .designs-info h1{
+        margin-bottom: 80rem;
     }
-
-    .cards .card:hover .imgbx
-    {
-        transform: translateY(-10%);
-    }
-
     
     /* GALLERY SECTION ---------> CLASS = PHOTOS*/
 
-    #gallery .photos {
-        border: 1rem solid rgb(204, 204, 204);
-        background: rgba(0,0,0,0.2);
-        min-height: 90vh;
-        display: grid;
-        grid-template-rows: repeat(10, 7.5vh);
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 1rem;
+    #gallery {
+        background-position: 48% 50%;
     }
-    
 
-    .slider1{
-        grid-row: 1/5;
-        grid-column: 1/7;
-    }
-    
-    .slider2{
-        grid-row: 1/4;
-        grid-column: 7/13;
-    }
-    
-    .slider3{
-        grid-row: 5/8;
-        grid-column: 1/7;
-    }
-    
-    .slider4{
-        grid-row: 4/8;
-        grid-column: 7/13; 
-    }
-    
-    .slider5{
-        grid-row: 8/12;
-        grid-column: 1/8;
-    }
-    
-    .slider6{
-        grid-row: 8/12;
-        grid-column: 8/13;
+    #gallery .gallery-info h1{
+        margin-bottom: 80rem;
     }
 
     /* CONTACT SECTION */
