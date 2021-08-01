@@ -9,7 +9,6 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
-    /* background: linear-gradient(rgba(0,0,0,0.2),transparent),url('/02_Images/Carmen_LandingPage.jpg'); */
 }
 
 body{
@@ -17,10 +16,7 @@ body{
 }
 
 .main-head{
-    background: linear-gradient(rgba(0,0,0,0.2),transparent),url('/02_Images/Carmen_LandingPage.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 80%;
+    background: linear-gradient(rgba(68, 65, 65, 0.534));
     width: 100%;
     height: auto;
     color: white;
@@ -32,7 +28,7 @@ body{
 
 nav{
     background: #0002;
-    backdrop-filter: blur(150px);
+    backdrop-filter: blur(800px);
     min-height: 10vh;
     display: flex;
     width: 100%;
@@ -62,7 +58,7 @@ nav ul{
     flex: 2 1 40rem;
     align-items: center;
     justify-content: flex-start;
-    font-family: 'Pattaya', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
 
@@ -72,8 +68,8 @@ nav ul{
 }
 
 #name{
-    font-family: 'Nixie One', sans-serif;
-    font-size: 4rem
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem
 }
 
 
@@ -110,7 +106,7 @@ a{
 
 
 #home .homeinfo h2{
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5.0rem;
     font-weight: bold;
     padding-top: 2rem;
@@ -120,7 +116,7 @@ a{
 }
 
 #home .homeinfo h3{
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3.0rem;
     padding: 2rem;
 }
@@ -140,7 +136,7 @@ a{
     color: white;
     font-size: 4rem;
     cursor: pointer;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #home .gotodesigns a:hover{
@@ -185,14 +181,14 @@ a{
 
 #about .txt h1{
     white-space: nowrap;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 6rem;
 }
 
 #about .txt p{
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     line-height: 1.4;
     margin-bottom: 4rem;
@@ -225,7 +221,7 @@ a{
 
 
 #designs .designs-info h1{
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5.0rem;
     font-weight: bold;
     padding-top: 2rem;
@@ -259,7 +255,7 @@ a{
 
 
 #gallery .gallery-info h1{
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 5.0rem;
     font-weight: bold;
     padding-top: 2rem;
@@ -289,7 +285,7 @@ a{
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 0rem;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 35px;
 }
 
@@ -352,7 +348,7 @@ a{
     color: white;
     font-size: 2.5rem;
     cursor: pointer;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 #contact button:hover{
@@ -372,7 +368,7 @@ a{
     align-self: center;
     justify-self: center;
     font-size: 23px;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
@@ -452,7 +448,7 @@ a{
 .main-foot{
     background: rgba(0,0,0,0.2);
     min-height: 10vh;
-    font-family: 'Nixie One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -557,7 +553,7 @@ a{
     }
     
     #home .homeinfo h3{
-        font-family: 'Nixie One', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 3.5rem;
         padding: 2rem;
     }
