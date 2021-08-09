@@ -17,52 +17,27 @@ html{
     background: url(./02_Images/coming_soon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 70%;
+    background-position: 100% 50%;
     min-height: 100vh;
 }
 
 .main-head{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 80%;
-    width: 100%;
-    height: auto;
-    z-index: 10;
-    position: -webkit-sticky;
-	position: sticky;
-    top: 0;
-}
-
-nav{
     min-height: 10vh;
+    width: 100vw;
     display: flex;
-    width: 100%;
-    margin: auto;
-    padding: 2rem;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
-
-nav ul{
-    margin-left: 2rem;
-    margin-right: 2rem;
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    z-index: 10;
-    }
 
 #name_logo{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    position: absolute;
+    min-width: 50vw;
+    left: 25vw;
     display: flex;
-    flex: 2 1 40rem;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     font-family: 'Pattaya', sans-serif;
     font-weight: 400;
 }
@@ -74,20 +49,9 @@ nav ul{
 
 #name{
     font-family: 'Nixie One', sans-serif;
-    font-size: 4rem
+    font-size: 5.5rem
 }
 
-
-li {
-    font-size: 3.0rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-a{
-    color: white;
-    text-decoration: none;
-}
 
 #home{
     min-height: 80vh;
@@ -108,7 +72,7 @@ a{
     width: 70vw;
     position: absolute;
     left: 15vw;
-    bottom: 70vh;
+    bottom: 67.5vh;
 }
 
 
@@ -134,11 +98,12 @@ a{
     margin-top: 5vh;
     position: absolute;
     left: 40vw;
-    bottom: 25vh;
+    bottom: 20vh;
 }
 
 #home .homedivs .meantime h4{
     font-family: 'Nixie One', sans-serif;
+    font-weight: bold;
     font-size: 4.5rem;
     padding: 2rem;
 }
@@ -147,182 +112,10 @@ a{
     margin: 5vh;
     position: absolute;
     right: 45vw;
-    bottom: 15vh;
+    bottom: 10vh;
 }
 #home .homedivs .instagram img{
     max-height: 110px;
-}
-
-
-
-
-/* CONTACT SECTION MAIN DIV  */
-
-#contact {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: center;
-    width: 100%;
-    min-height: 80vh;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* CONTACT SECTION BOTH DIVS */
-
-#contact .form h2{
-    text-align: center;
-    padding-top: 5rem;
-    padding-bottom: 0rem;
-    font-family: 'Nixie One', sans-serif;
-    font-size: 35px;
-}
-
-#contact .map,
-#contact .form{
-    flex: 1 1 60rem;
-    min-height: 45vh;
-}
-
-#contact .map{
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    margin-left: 10rem;
-}
-
-#contact .form h2{
-    font-size: 55px;
-    padding-top: 7rem;
-    padding-bottom: 2rem;
-}
-
-#contact .form{
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    margin-right: 10rem;
-    align-items: center;
-    justify-content: space-around;
-
-}
-
-#contact form{
-    padding-left: 3.5rem;
-    padding-right: 4rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#contact .map iframe{
-    width: 100%;
-    min-height: 45vh;
-}
-
-
-#contact button{
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    margin: 30px;
-    padding: 2rem 6rem;
-    background: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 2.5rem;
-    cursor: pointer;
-    font-family: 'Nixie One', sans-serif;
-}
-
-#contact button:hover{
-    background: #27394e;
-}
-
-/* CONTACT SECTION FORM ONLY */
-
-.form .form-name,
-.form .form-email,
-.form .form-message {
-    width: 86%;
-    position: relative;
-    height: 60px;
-    overflow: hidden;
-    margin: 30px;
-    align-self: center;
-    justify-self: center;
-    font-size: 23px;
-    font-family: 'Nixie One', sans-serif;
-    font-weight: bold;
-}
-
-.form .form-name input,
-.form .form-email input,
-.form .form-message input {
-    width: 100%;
-    height: 100%;
-    color: #595f6e;
-    padding-top: 20px;
-    border: none;
-    outline: none;
-    overflow-wrap: break-word;
-}
-
-.form .form-name label,
-.form .form-email label,
-.form .form-message label{
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 2.5px solid black;
-}
-
-.form .form-name label::after,
-.form .form-email label::after,
-.form .form-message label::after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -4px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 4px solid #5fa8d3;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-}
-
-.content-name,
-.content-email,
-.content-message{
-    position: absolute;
-    bottom: 5px;
-    left: 0px;
-    transition: all 0.3s ease;
-    overflow-wrap: break-words;
-}
-
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name,
-.form input:focus + .label-email .content-email,
-.form input:valid + .label-email .content-email,
-.form input:focus + .label-message .content-message,
-.form input:valid + .label-message .content-message{
-    transform: translateY(-150%);
-    font-size: 15px;
-    color: #5fa8d3;
-}
-
-.form input:focus + .label-name::after,
-.form input:valid + .label-name::after,
-.form input:focus + .label-email::after,
-.form input:valid + .label-email::after,
-.form input:focus + .label-message::after,
-.form input:valid + .label-message::after{
-    transform: translateX(0%);
 }
 
 
@@ -354,73 +147,7 @@ a{
     html, body{
         overflow-x: hidden;
     }
-
-    .home{
-        font-family: 'Poppins', sans-serif;
-        background: url(./02_Images/coming_soon.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100vh;
-    }
-
-    /* LANDING PAGE AND NAVBAR */
-    .line1,
-    .line2,
-    .line3 {
-        width: 75px;
-        height: 10px;
-        background-color: white;
-        margin: 15px;
-        margin-right: 50px;
-        border-radius: 10px;
-    }
-
-    .contact nav{
-        padding: 0;
-        margin: 0;
-        height: 100%;
-        position: relative;
-        min-height: 8vh;
-    }
-    .hamburger{
-        cursor: pointer;
-        display: block;
-    }
-
-    .hamburger div{
-        transition: all 0.3s ease;
-    }
-
-    .nav-links{
-        position: absolute;
-        right: -25px;
-        min-height: 92vh;
-        top: 8vh;
-        width: 20%;
-        background: rgba(0, 0, 0, 0.800);
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .nav-links li{
-        opacity: 0;
-    }
-
-    li {
-        font-size: 3.5rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-    }
-    
-
-    .nav-links.open{
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path:circle(100px at 90% -10%);
-    }
-
-
+        
     /* HOME SECTION */
     .home{
         background-repeat: no-repeat;
@@ -429,13 +156,14 @@ a{
         min-height: 100vh;
     }
 
+    .home #name_logo{
+        min-width: 75vw;
+        left: 12.5vw;
+    }
+
     #home .homeinfo h2{
-        font-size: 6rem;
+        font-size: 5rem;
         font-weight: bold;
-        padding-top: 2.5rem;
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
-        padding-bottom: 0rem;
     }
     
     #home .homeinfo h3{
@@ -449,12 +177,12 @@ a{
         width: 60vw;
         position: absolute;
         left: 20vw;
-        bottom: 25vh;
+        bottom: 20vh;
     }
     
     #home .homedivs .meantime h4{
         font-family: 'Nixie One', sans-serif;
-        font-size: 6rem;
+        font-size: 5.5rem;
         padding: 2rem;
     }
     
@@ -463,105 +191,25 @@ a{
         position: absolute;
         width: 20vw;
         right: 40vw;
-        bottom: 15vh;
+        bottom: 9vh;
     }
 
 
     #home .homedivs .instagram img{
-        max-height: 150px;
+        max-height: 130px;
     }
     
-
-
-
-    /* CONTACT SECTION */
-
-    #contact .map,
-    #contact .form {
-        margin: 0;
-        padding: 0;
-    }
-
-    #contact .map {
-        min-height: 37vh;
-        flex-grow: 1;
-    }
-
-    #contact .map iframe{
-        width: 100%;
-        min-height: 37vh;
-        flex-grow: 1;
-    }
-
-    #contact .form h2{
-        font-size: 55px;
-        padding-top: 12rem;
-        padding-bottom: 2.5rem;
-    }
-
-    #contact form{
-        padding-left: 10rem;
-        padding-right: 10rem;
-        padding-top: 1rem;
-    }
-
-    .form .form-name,
-    .form .form-email,
-    .form .form-message {
-        height: 100px;
-    }
-    
-    .form .form-name label,
-    .form .form-email label,
-    .form .form-message label{
-        font-size: 30px;
-    }
-
-    .form .form-name,
-    .form .form-email,
-    .form .form-message {
-        width: 88%;
-    }
-
-    .form .form-name label::after,
-    .form .form-email label::after,
-    .form .form-message label::after {
-        bottom: -6px;
-        border-bottom: 8px solid #5fa8d3;
-    }
-
-    #contact button{
-
-        margin-top: 8rem;
-        margin-bottom: 80px;
-    }
- 
 
     /* FOOTER SECTION */
 
     .main-foot .name-legal{
         width: 100vw;
-        align-self: flex-start;
-        padding-bottom: 5rem;
-        margin-left: 9rem;
-        margin-right: 9rem;
-        font-size: 1.12rem;
+        margin-left: 5.5rem;
+        margin-right: 5rem;
+        font-size: 12px;
         font-weight: bold;
-    
     }
     
-    .main-foot .instagram{
-        align-self: flex-start;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
-    }
-
-    .contact .main-foot .instagram img{
-        max-height: 80px;
-    }
-
 }
 
 
