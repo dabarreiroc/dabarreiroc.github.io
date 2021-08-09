@@ -9,17 +9,24 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
 }
 
-body{
+.home{
     font-family: 'Poppins', sans-serif;
+    background: url(./02_Images/coming_soon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 70%;
+    min-height: 100vh;
 }
 
 .main-head{
-    background: linear-gradient(rgba(68, 65, 65, 0.534));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 80%;
     width: 100%;
     height: auto;
-    color: white;
     z-index: 10;
     position: -webkit-sticky;
 	position: sticky;
@@ -27,8 +34,6 @@ body{
 }
 
 nav{
-    background: #0002;
-    backdrop-filter: blur(800px);
     min-height: 10vh;
     display: flex;
     width: 100%;
@@ -58,7 +63,7 @@ nav ul{
     flex: 2 1 40rem;
     align-items: center;
     justify-content: flex-start;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Pattaya', sans-serif;
     font-weight: 400;
 }
 
@@ -68,8 +73,8 @@ nav ul{
 }
 
 #name{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5rem
+    font-family: 'Nixie One', sans-serif;
+    font-size: 4rem
 }
 
 
@@ -85,11 +90,7 @@ a{
 }
 
 #home{
-    background: linear-gradient(rgba(0,0,0,0.2),transparent),url('/02_Images/Carmen_LandingPage.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 80%;
-    min-height: 90vh;
+    min-height: 80vh;
     color: white;
     display: flex;
     flex-direction: column;
@@ -97,16 +98,22 @@ a{
     align-items: center;
     text-align: center;
 }
-
+#home .homedivs{
+    justify-content: center;
+}
 #home .homeinfo{
     align-self: center;
     justify-content: space-between;
     margin: 2rem;
+    width: 70vw;
+    position: absolute;
+    left: 15vw;
+    bottom: 70vh;
 }
 
 
 #home .homeinfo h2{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
     font-size: 5.0rem;
     font-weight: bold;
     padding-top: 2rem;
@@ -116,154 +123,36 @@ a{
 }
 
 #home .homeinfo h3{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
     font-size: 3.0rem;
     padding: 2rem;
 }
 
-#home .gotodesigns{
-    margin: 2rem;
+#home .homedivs .meantime{
+    width: 20vw;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    position: absolute;
+    left: 40vw;
+    bottom: 25vh;
 }
 
-
-#home .gotodesigns a{
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    padding: 2rem 6rem;
-    background: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 4rem;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+#home .homedivs .meantime h4{
+    font-family: 'Nixie One', sans-serif;
+    font-size: 4.5rem;
+    padding: 2rem;
 }
 
-#home .gotodesigns a:hover{
-    background: #27394e;
+#home .homedivs .instagram{
+    margin: 5vh;
+    position: absolute;
+    right: 45vw;
+    bottom: 15vh;
+}
+#home .homedivs .instagram img{
+    max-height: 110px;
 }
 
-
-/* ABOUT SECTION */
-
-#about {
-    background-color: rgba(238, 232, 232, 0.781); 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    min-height: 80vh;
-    margin: auto;
-    overflow: hidden;
-}
-
-#about .photo{
-    flex: 1 1 80rem;
-    align-items: center;
-    justify-content: center;
-}
-
-#about .photo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#about .txt{
-    flex: 1 1 80rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10rem 20rem; 
-}
-
-
-#about .txt h1{
-    white-space: nowrap;
-    font-family: 'Poppins', sans-serif;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 6rem;
-}
-
-#about .txt p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    line-height: 1.4;
-    margin-bottom: 4rem;
-    text-align: justify;
-}
-
-
-/* DESIGNS SECTION */
-
-
-#designs {
-    background: linear-gradient(rgba(0,0,0,0.2),transparent),url('/02_Images/schwarzwald_ring.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30% 25%;
-    min-height: 82vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#designs .designs-info{
-    align-self: center;
-    justify-content: space-between;
-    margin: 2rem;
-}
-
-
-#designs .designs-info h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5.0rem;
-    font-weight: bold;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 10rem;
-    margin-bottom: 40rem;
-}
-/* GALLERY SECTION -------------> CLASS = PHOTOS */
-/* GALLERY SECTION -------------> CLASS = SLIDERS */
-
-#gallery {
-    background: linear-gradient(rgba(0,0,0,0.2),transparent),url('/02_Images/triangle_ring_single.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 25%;
-    min-height: 82vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-#gallery .gallery-info{
-    align-self: center;
-    justify-content: space-between;
-    margin: 2rem;
-}
-
-
-#gallery .gallery-info h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 5.0rem;
-    font-weight: bold;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 10rem;
-    margin-bottom: 40rem;
-}
 
 
 
@@ -285,16 +174,12 @@ a{
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 0rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
     font-size: 35px;
 }
 
+#contact .map,
 #contact .form{
-    flex: 1 1 60rem;
-    min-height: 45vh;
-}
-
-#contact .map{
     flex: 1 1 60rem;
     min-height: 45vh;
 }
@@ -348,7 +233,7 @@ a{
     color: white;
     font-size: 2.5rem;
     cursor: pointer;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
 }
 
 #contact button:hover{
@@ -368,7 +253,7 @@ a{
     align-self: center;
     justify-self: center;
     font-size: 23px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
     font-weight: bold;
 }
 
@@ -446,18 +331,17 @@ a{
 }
 
 .main-foot{
-    background: rgba(0,0,0,0.2);
+    /* background: rgba(0,0,0,0.2); */
     min-height: 10vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nixie One', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.main-foot  .instagram img{
-    max-height: 60px;
-}
 
 
 
@@ -469,6 +353,14 @@ a{
 
     html, body{
         overflow-x: hidden;
+    }
+
+    .home{
+        font-family: 'Poppins', sans-serif;
+        background: url(./02_Images/coming_soon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
     }
 
     /* LANDING PAGE AND NAVBAR */
@@ -530,17 +422,11 @@ a{
 
 
     /* HOME SECTION */
-
-    #home{
+    .home{
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 45% 80%;
-        min-height: 92vh;
-    }
-
-    #home .homedivs{
-        position: absolute;
-        top: 60%;
+        background-position: 45% 50%;
+        min-height: 100vh;
     }
 
     #home .homeinfo h2{
@@ -553,54 +439,40 @@ a{
     }
     
     #home .homeinfo h3{
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Nixie One', sans-serif;
         font-size: 3.5rem;
         padding: 2rem;
     }
-    
-    #home .gotodesigns{
-        margin: 3.5rem;
-    }
-    
-    #home .gotodesigns a{
-        padding: 3rem 10rem;
-        font-size: 4rem;
-    }
-    
-    #home .gotodesigns a:hover{
-        background: #27394e;
-    }
 
-    /* ABOUT SECTION */
-
-    #about {
-        min-height: 92vh; 
-    }
-
-    #about .photo img{
-        height: 100%;
-        width: auto;
-    }
-
-    /* DESIGNS SECTION */
-    #designs  
-    {
-        background-position: 45% 50%;
-    }
-
-    #designs .designs-info h1{
-        margin-bottom: 80rem;
+    #home .homedivs .meantime{
+        margin: 5vh 0vh;
+        width: 60vw;
+        position: absolute;
+        left: 20vw;
+        bottom: 25vh;
     }
     
-    /* GALLERY SECTION ---------> CLASS = PHOTOS*/
-
-    #gallery {
-        background-position: 48% 50%;
+    #home .homedivs .meantime h4{
+        font-family: 'Nixie One', sans-serif;
+        font-size: 6rem;
+        padding: 2rem;
+    }
+    
+    #home .homedivs .instagram{
+        margin: 5vh 0vh;
+        position: absolute;
+        width: 20vw;
+        right: 40vw;
+        bottom: 15vh;
     }
 
-    #gallery .gallery-info h1{
-        margin-bottom: 80rem;
+
+    #home .homedivs .instagram img{
+        max-height: 150px;
     }
+    
+
+
 
     /* CONTACT SECTION */
 
@@ -668,11 +540,13 @@ a{
     /* FOOTER SECTION */
 
     .main-foot .name-legal{
+        width: 100vw;
         align-self: flex-start;
         padding-bottom: 5rem;
         margin-left: 9rem;
         margin-right: 9rem;
-        font-size: 0.9rem;
+        font-size: 1.12rem;
+        font-weight: bold;
     
     }
     .main-foot .instagram{
