@@ -375,7 +375,7 @@ a{
         border-radius: 10px;
     }
 
-    nav{
+    .contact nav{
         padding: 0;
         margin: 0;
         height: 100%;
@@ -549,6 +549,7 @@ a{
         font-weight: bold;
     
     }
+    
     .main-foot .instagram{
         align-self: flex-start;
         margin-top: 1.5rem;
@@ -557,7 +558,9 @@ a{
         margin-right: 15rem;
     }
 
-
+    .contact .main-foot .instagram img{
+        max-height: 80px;
+    }
 
 }
 
