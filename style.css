@@ -177,6 +177,11 @@ html{
     }
 
     .home #name_logo{
+        width: 90vw;
+        left: 5vw;
+    }
+
+    .section-home .homedivs .homeinfo{
         width: 80vw;
         left: 10vw;
     }
@@ -222,8 +227,8 @@ html{
 
     .main-foot .name-legal{
         top: 40%;
-        right: 5%;
-        left: 5%;
+        right: 2.5%;
+        left: 2.5%;
     }
     
 }
