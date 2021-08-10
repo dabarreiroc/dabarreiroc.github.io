@@ -70,8 +70,6 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
 }
 
 .section-home .homedivs{
@@ -187,7 +185,6 @@ html{
 
     .section-home .homedivs .homeinfo h2{
         font-size: 5.5rem;
-        font-weight: bold;
     }
     
     .section-home .homedivs .homeinfo h3{
