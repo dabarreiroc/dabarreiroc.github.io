@@ -177,13 +177,13 @@ html{
     }
 
     .home #name_logo{
-        width: 90vw;
-        left: 5vw;
+        width: 95vw;
+        left: 2.5vw;
     }
 
     .section-home .homedivs .homeinfo{
-        width: 80vw;
-        left: 10vw;
+        width: 90vw;
+        left: 5vw;
     }
 
     .section-home .homedivs .homeinfo h2{
