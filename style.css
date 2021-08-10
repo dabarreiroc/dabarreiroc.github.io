@@ -9,6 +9,8 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 .home{
@@ -35,14 +37,15 @@ html{
 
 #name_logo{
     /* background: chocolate; */
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
     position: absolute;
-    width: 50vw;
-    left: 25vw;
+    width: 25vw;
+    left: 37.5vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Pattaya', sans-serif;
-    font-weight: 400;
 }
 
 #name_logo img{
@@ -51,7 +54,6 @@ html{
 }
 
 #name{
-    font-family: 'Nixie One', sans-serif;
     font-size: 5.5rem
 }
 
@@ -68,6 +70,8 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 
 .section-home .homedivs{
@@ -77,9 +81,9 @@ html{
 }
 
 .section-home .homedivs .homeinfo{
-    /* background: cornflowerblue; */
+    /* background: rgb(123, 127, 134); */
     position: absolute;
-    top: 10%;
+    top: 5%;
     width: 70vw;
     left: 15vw;
     display: wrap;
@@ -89,9 +93,7 @@ html{
 
 
 .section-home .homedivs .homeinfo h2{
-    font-family: 'Nixie One', sans-serif;
     font-size: 5.0rem;
-    font-weight: bold;
     padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -99,9 +101,8 @@ html{
 }
 
 .section-home .homedivs .homeinfo h3{
-    font-family: 'Nixie One', sans-serif;
     font-size: 3.0rem;
-    padding: 2rem;
+    padding-top: 10rem;
 }
 
 .section-home .homedivs .meantime{
@@ -114,8 +115,6 @@ html{
 }
 
 .section-home .homedivs .meantime h4{
-    font-family: 'Nixie One', sans-serif;
-    font-weight: bold;
     font-size: 4.5rem;
     padding: 2rem;
 }
@@ -128,7 +127,7 @@ html{
     left: 15vw;
 }
 .section-home .homedivs .instagram img{
-    max-height: 110px;
+    max-height: 100px;
 }
 
 
@@ -139,9 +138,7 @@ html{
     min-height: 10vh;
     width: 100vw;
     /* background: rgba(0,0,0,0.2); */
-    font-family: 'Nixie One', sans-serif;
     font-size: 12px;
-    font-weight: bold;
 }
 
 .main-foot .name-legal{
@@ -178,24 +175,24 @@ html{
     }
 
     .home #name_logo{
-        width: 95vw;
-        left: 2.5vw;
+        width: 70vw;
+        left: 15vw;
     }
 
     .section-home .homedivs .homeinfo{
         width: 90vw;
         left: 5vw;
+        top: 2%;
     }
 
     .section-home .homedivs .homeinfo h2{
-        font-size: 5rem;
+        font-size: 5.5rem;
         font-weight: bold;
     }
     
     .section-home .homedivs .homeinfo h3{
-        font-family: 'Nixie One', sans-serif;
         font-size: 3.5rem;
-        padding: 2rem;
+        padding: 16rem;
     }
 
     .section-home .homedivs .meantime{
@@ -206,8 +203,7 @@ html{
     }
     
     .section-home .homedivs .meantime h4{
-        font-family: 'Nixie One', sans-serif;
-        font-size: 5.5rem;
+        font-size: 5rem;
         padding: 2rem;
     }
     
@@ -220,7 +216,7 @@ html{
 
 
     .section-home .homedivs .instagram img{
-        max-height: 130px;
+        max-height: 100px;
     }
     
 
