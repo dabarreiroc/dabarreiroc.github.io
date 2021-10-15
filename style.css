@@ -7,16 +7,15 @@
 }
 
 html{
-    font-size: 62.5%;
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
 }
 
 .home{
-    background: url(./02_Images/coming_soon.jpg);
+    background: url(./02_Images/desktop_landingpage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 50%;
+    background-position: 100% 65%;
     height: 100vh;
     position: relative;
 }
@@ -25,7 +24,7 @@ html{
     /* background: blue; */
     position: relative;
     top: 0%;
-    min-height: 10vh;
+    min-height: 15vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -39,30 +38,26 @@ html{
     border-style: solid;
     border-color: black;
     border-width: thin;
-    position: absolute;
-    width: 25vw;
-    left: 37.5vw;
+    position: relative;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#name_logo img{
-    margin-right: 2rem;
-    max-height: 70px;
+    margin: 2rem;
 }
 
 #name{
-    font-size: 5.5rem
+    padding: 0rem 1.5rem;
+    font-size: 2.8rem;
 }
 
 
 .section-home{
-    color: white;
     /* background: greenyellow; */
+    color: white;
     position: relative;
     top: 0%;
-    min-height: 80vh;
+    min-height: 75vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -71,60 +66,73 @@ html{
     text-align: center;
 }
 
-.section-home .homedivs{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.section-home .sectiondiv{
+    position: relative;
+    min-height: 77vh;
 }
 
-.section-home .homedivs .homeinfo{
-    /* background: rgb(123, 127, 134); */
-    position: absolute;
-    top: 5%;
-    width: 70vw;
-    left: 15vw;
+.section-home .homedivstop{
+    position: relative;
+    min-height: 38.5vh;
+    padding-top: 2.25rem;
+}
+.section-home .homedivsbottom{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    min-height: 38.5vh;
+}
+
+.section-home .homedivstop{
+    top: 0%; 
+}
+
+.section-home .homeinfo{
+    /* background: slateblue; */
+    position: relative;
+    width: 80vw;
+    height: auto;
     display: wrap;
     align-self: center;
     justify-content: center;
 }
 
 
-.section-home .homedivs .homeinfo h2{
-    font-size: 5.0rem;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 0rem;
+.section-home .homeinfo h2{
+    /* background: white; */
+    font-size: 2.5rem;
 }
 
-.section-home .homedivs .homeinfo h3{
-    font-size: 3.0rem;
-    padding-top: 10rem;
+.section-home .homeinfo h3{
+    /* background: crimson; */
+    font-size: 1.5rem;
+    padding: 1.25rem;
 }
 
-.section-home .homedivs .meantime{
+.section-home .meantime{
     /* background: darkgreen; */
-    position: absolute;
-    top: 65%;
-    width: 70vw;
-    left: 15vw;
-
+    position: relative;
+    width: 80vw;
+    height: auto;
 }
 
-.section-home .homedivs .meantime h4{
-    font-size: 4.5rem;
+.section-home .meantime h4{
+    /* background: darkkhaki; */
+    font-size: 1.75rem;
     padding: 2rem;
 }
 
-.section-home .homedivs .instagram{
+.section-home .instagram{
     /* background: darksalmon; */
-    position: absolute;
-    top: 75%;
-    width: 70vw;
-    left: 15vw;
+    position: relative;
+    width: 80vw;
+    height: auto;
 }
-.section-home .homedivs .instagram img{
-    max-height: 100px;
+
+.section-home .instagram img{
+    max-height: 3.75rem;
 }
 
 
@@ -132,21 +140,17 @@ html{
     /* background: red; */
     position: relative;
     bottom: 0%;
-    min-height: 10vh;
+    min-height: 8vh;
     width: 100vw;
-    /* background: rgba(0,0,0,0.2); */
-    font-size: 12px;
-}
-
-.main-foot .name-legal{
-    /* background: white; */
-    position: absolute;
-    top: 40%;
-    right: 20%;
-    left: 20%;
+    font-size: 0.55rem;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.main-foot .name-legal{
+    position: relative;
 }
 
 
@@ -165,63 +169,43 @@ html{
         
     /* HOME SECTION */
     .home{
+        background: url(./02_Images/coming_soon.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: 45% 50%;
+        background-position: 45% 30%;
         min-height: 100vh;
     }
 
-    .home #name_logo{
-        width: 70vw;
-        left: 15vw;
+    #name{
+        font-size: 4rem;
     }
 
-    .section-home .homedivs .homeinfo{
+    .section-home .homeinfo{
         width: 90vw;
-        left: 5vw;
-        top: 2%;
     }
 
-    .section-home .homedivs .homeinfo h2{
-        font-size: 5.5rem;
-    }
-    
-    .section-home .homedivs .homeinfo h3{
-        font-size: 3.5rem;
-        padding: 16rem;
-    }
-
-    .section-home .homedivs .meantime{
-        position: absolute;
-        top: 72.5%;
-        width: 70vw;
-        left: 15vw;
-    }
-    
-    .section-home .homedivs .meantime h4{
-        font-size: 5rem;
+    .section-home .homeinfo h2{
         padding: 2rem;
+        font-size: 3.5rem;
     }
     
-    .section-home .homedivs .instagram{
-        position: absolute;
-        top: 82.5%;
-        width: 70vw;
-        left: 15vw;
+    .section-home .homeinfo h3{
+        font-size: 2.5rem;
     }
 
+    .section-home .meantime h4{
+        font-size: 3.5rem;
+    }
 
-    .section-home .homedivs .instagram img{
-        max-height: 100px;
+    .section-home .instagram img{
+        max-height: 7rem;
     }
     
-
     /* FOOTER SECTION */
 
     .main-foot .name-legal{
-        top: 40%;
-        right: 2.5%;
-        left: 2.5%;
+        font-size: 0.85rem;
+        margin: 2rem 0rem;
     }
     
 }
