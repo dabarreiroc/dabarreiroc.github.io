@@ -1,0 +1,526 @@
+/* Global styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home{
+    height: 100vh;
+    position: relative;
+}
+
+/* HEADER OF THE PAGE */
+
+.main-head-contact{
+    background: #7990ac;
+    position: relative;
+    top: 0%;
+    min-height: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-head-contact .empty-div{
+    /* background: yellowgreen; */
+    position: relative;
+    width: 33vw;
+    min-height: 2vh;
+    display: flex;
+}
+
+.main-head-contact .name_logo{
+    /* background: chocolate; */
+    position: relative;
+    width: 34vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-head-contact .name_logo #name{
+    font-size: 2.5rem;
+    padding: 0rem 1.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+}
+
+.main-head-contact .name_logo #name a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-head-contact nav{
+    /* background: red; */
+    position: relative;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-head-contact nav ul{
+    /* background: salmon; */
+    position: relative;
+    width: 26.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.main-head-contact nav ul li{
+    /* background: chartreuse; */
+    position: relative;
+    width: 5.3vw;
+}
+
+.main-head-contact nav ul li a{
+    /* background: cornflowerblue; */
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.main-head-contact nav ul li a::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    left: 0%;
+    height: 0.10rem;
+    bottom: -0.5rem;
+    background: rgb(255, 255, 255);
+    transition: width 0.2s ease-in;
+}
+
+.main-head-contact nav ul li a:hover:after{
+    width: 100%;
+}
+
+
+/* CONTENT SECTION OF THE PAGE */
+
+.section-contact{
+    color: white;
+    /* background: greenyellow; */
+    position: relative;
+    min-height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-contact .mapandform{
+    background: rgb(211, 211, 211);
+    position: relative;
+    width: 100vw;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+.section-contact .mapandform .map,
+.section-contact .mapandform .form{
+    position: relative;
+    width: 50vw;
+    min-height: 48vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-contact .mapandform .map iframe{
+    position: relative;
+    min-height: 48vh;
+    width: 100%;
+    left: 20%;
+    
+}
+ 
+.section-contact .mapandform .form .formtitle{
+    /* background: cyan; */
+    position: relative;
+    width: 100%;
+    min-height: 9.6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.section-contact .mapandform .form .formbox{
+    /* background: darkgoldenrod; */
+    position: relative;
+    width: 100%;
+    min-height: 38.4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.section-contact .mapandform .form .formbox form{
+    /* background: cornflowerblue; */
+    position: relative;
+    width: 70%;
+    min-height: 38.4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-contact .mapandform .form .formbox form .form-inputs{
+    /* background: red; */
+    position: relative;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-contact .mapandform .form .formbox form .form-button{
+    /* background: yellow; */
+    position: relative;
+    width: 100%;
+    min-height: 8.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-contact .mapandform .form .formbox form .form-inputs .form-name,
+.section-contact .mapandform .form .formbox form .form-inputs .form-email,
+.section-contact .mapandform .form .formbox form .form-inputs .form-message {
+    position: relative;
+    width: 100%;
+    min-height: 9vh;
+    overflow: hidden;
+} 
+
+.form .form-name input,
+.form .form-email input,
+.form .form-message input {
+    background: rgb(211, 211, 211);
+    position: relative;
+    width: 100%;
+    min-height: 5vh;
+    font-size: 1.25rem;
+    padding-top: 1.5rem;
+    border: none;
+    outline: none;
+} 
+
+.form .form-name label,
+.form .form-email label,
+.form .form-message label{
+    position: absolute;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    width: 100%;
+    min-height: 5vh;
+    left: 0%;
+    color: black;
+    pointer-events: none;
+    border-bottom: 0.15rem solid black;
+}
+
+.form .form-name label::after,
+.form .form-email label::after,
+.form .form-message label::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    border-bottom: 0.3rem solid #5fa8d3;
+    transition: transform 1s;
+    transform: translateX(-100%);
+
+} 
+
+.content-name,
+.content-email,
+.content-message{
+    position: absolute;
+    bottom: 5%;
+    transition: all 1s ease;
+    overflow-wrap: break-words;
+}
+
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name,
+.form input:focus + .label-email .content-email,
+.form input:valid + .label-email .content-email,
+.form input:focus + .label-message .content-message,
+.form input:valid + .label-message .content-message{
+    transform: translateY(-120%);
+    font-size: 1.25rem;
+    color: #5fa8d3;
+}
+
+.form input:focus + .label-name::after,
+.form input:valid + .label-name::after,
+.form input:focus + .label-email::after,
+.form input:valid + .label-email::after,
+.form input:focus + .label-message::after,
+.form input:valid + .label-message::after{
+    transform: translateX(0%);
+} 
+
+.section-contact .mapandform .form .formbox button{
+    position: relative;
+    min-width: 30%;
+    min-height: 5vh;
+    margin: 0.25rem 1.25rem;
+    padding: 0.15rem 1.15rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.75rem;
+    cursor: pointer;
+}
+
+.section-contact .mapandform .form .formbox button:hover{
+    background: #304053;
+}
+
+/* FOOTER OF THE PAGE */
+
+.main-foot{
+    background: #7990ac;
+    position: relative;
+    top: 0%;
+    min-height: 10vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-foot .nameandinsta{
+    /* background: rgb(87, 43, 65); */
+    position: relative;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-foot .nameandinsta .name-legal{
+    /* background: white; */
+    font-size: 0.45rem;
+    margin: 1rem 2rem;
+}
+
+.main-foot .nameandinsta .instagram{
+    /* background: seagreen; */
+    padding: 0.75rem 1rem;
+}
+
+.main-foot  .instagram img{
+    max-height: 2.0rem;
+}
+
+
+/* MEDIA QUERIES AND MOBILE/TABLET RESPONSIVENESS */
+
+@media only screen and (max-width: 1200px){
+
+    /* FULL WEBSITE */
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    /* HEADER OF THE PAGE */
+
+    .main-head-contact .empty-div{
+        width: 0vw;
+    }
+
+    .main-head-contact .name_logo{
+        width: 80vw;
+        margin-left: 2.5rem;
+    }
+
+    .main-head-contact .name_logo #name{
+        font-size: 3.85rem;
+        padding: 0rem 1.25rem;
+    }
+
+    .main-head-contact nav{
+        width: 20vw;
+    }
+
+    .main-head-contact nav ul{
+        position: absolute;
+        right: -25px;
+        min-height: 90vh;
+        top: 8vh;
+        width: 20%;
+        background: rgba(0, 0, 0, 0.800);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .main-head-contact nav ul .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(100px at 90% -10%);
+    }
+
+    .main-head-contact nav .hamburger{
+        position: relative;
+        width: 10vw;
+        height: 5.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .main-head-contact nav .hamburger .line1,
+    .main-head-contact nav .hamburger .line2,
+    .main-head-contact nav .hamburger .line3 {
+        position: absolute;
+        width: 85%;
+        height: 0.5rem;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .main-head-contact nav .hamburger .line1{
+        top: 1.7rem;
+    }
+    .main-head-contact nav .hamburger .line2{
+        top: 3.4rem;
+    }
+    .main-head-contact nav .hamburger .line3{
+        top: 5.1rem;
+    }  
+
+    /* CONTENT SECTION OF THE PAGE */
+
+    .section-contact .mapandform .map,
+    .section-contact .mapandform .form{
+        width: 100%;
+        height: 50%;    
+    }
+
+    .section-contact .mapandform .map iframe{
+        height: 100%;
+        width: 100%;
+        left: 0%;
+    }
+
+    .section-contact .mapandform .form .formtitle{
+        font-size: 2.75rem;
+    }
+
+    .section-contact .mapandform .form .formbox button{
+        margin-top: -15%;
+        font-size: 2.5rem;
+    }
+
+    .form .form-name label,
+    .form .form-email label,
+    .form .form-message label{
+        font-size: 2.25rem;
+    }
+
+    .form .form-name input,
+    .form .form-email input,
+    .form .form-message input {
+        font-size: 2.25rem;
+        padding-top: 2.5rem;
+    } 
+
+    .form input:focus + .label-name .content-name,
+    .form input:valid + .label-name .content-name,
+    .form input:focus + .label-email .content-email,
+    .form input:valid + .label-email .content-email,
+    .form input:focus + .label-message .content-message,
+    .form input:valid + .label-message .content-message{
+        transform: translateY(-150%);
+        font-size: 1.75rem;
+    }
+
+    /* FOOTER SECTION */
+
+    .main-foot .nameandinsta{
+        width: 95vw;
+    }
+
+    .main-foot .name-legal h1{
+        font-size: 1.55rem;
+    }
+
+    .main-foot  .instagram img{
+        max-height: 3.5rem;
+    }
+
+}
+
+
+/* FUNCTIONS FOR JAVASCRIPT */
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.toggle .line1{
+    /* transform:  translateY(40%) rotate(-45deg); */
+    transform:  translateY(1.7rem) rotate(-45deg);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: translateY(-1.7rem) rotate(45deg);
+}
+
+

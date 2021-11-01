@@ -1,0 +1,351 @@
+/* Global styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+.home{
+    background: url(./02_Images/desktop_landingpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 60%;
+    height: 100vh;
+    position: relative;
+}
+
+.main-head-home{
+    /* background: blue; */
+    position: relative;
+    top: 0%;
+    min-height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-head-home .empty-div{
+    /* background: yellowgreen; */
+    position: relative;
+    width: 33vw;
+    min-height: 2vh;
+    display: flex;
+}
+
+.main-head-home .name_logo{
+    /* background: chocolate; */
+    position: relative;
+    width: 34vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.main-head-home .name_logo #name{
+    padding: 0.5rem 1.5rem;
+    font-size: 2.5rem;
+    border-style: solid;
+    border-color: black;
+    border-width: thin; 
+}
+
+.main-head-home .name_logo #name a{
+    text-decoration: none;
+    color: black;
+}
+
+.main-head-home nav{
+    /* background: white; */
+    position: relative;
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-head-home nav ul{
+    /* background: salmon; */
+    position: relative;
+    width: 26.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    z-index: 10;
+}
+
+.main-head-home nav ul li{
+    /* background: chartreuse; */
+    position: relative;
+    width: 5.3vw;
+}
+
+.main-head-home nav ul li a{
+    /* background: cornflowerblue; */
+    position: relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    color: white;
+    font-size: 1.25rem;
+}
+
+.main-head-home nav ul li a::after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 0;
+    left: 0%;
+    height: 0.10rem;
+    bottom: -0.5rem;
+    background: rgb(255, 255, 255);
+    transition: width 0.2s ease-in;
+}
+
+.main-head-home nav ul li a:hover:after{
+    width: 100%;
+}
+
+.section-home{
+    /* background: greenyellow; */
+    color: white;
+    position: relative;
+    top: 0%;
+    min-height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-home .sectiondiv{
+    position: relative;
+    min-height: 75vh;
+}
+
+.section-home .homedivstop,
+.section-home .homedivsbottom{
+    /* background: chartreuse; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 37.5vh;
+}
+
+
+.section-home .homeinfo{
+    /* background: slateblue; */
+    position: relative;
+    width: 80vw;
+    height: auto;
+    display: wrap;
+    align-self: center;
+    justify-content: center;
+    padding-bottom: 11.5rem;
+}
+
+.section-home .homeinfo h2{
+    /* background: white; */
+    font-size: 2rem;
+}
+
+.section-home .discovernow{
+    position: relative;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.section-home .discovernow a{
+    background: #7990ac;
+    font-size: 1.75rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.discovernow a:hover{
+    background: #304053;
+}
+
+.main-foot-home{
+    /* background: red; */
+    position: relative;
+    bottom: 0%;
+    min-height: 10vh;
+    width: 100vw;
+    font-size: 0.45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-foot-home .name-legal-home{
+    position: relative;
+}
+
+
+
+
+/* MEDIA QUERIES AND MOBILE/TABLET RESPONSIVENESS */
+
+
+@media only screen and (max-width: 1200px){
+
+    /* FULL WEBSITE */
+
+    html, body{
+        overflow-x: hidden;
+    }
+        
+    /* HOME SECTION */
+    .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% 50%;
+        min-height: 100vh;
+    }
+
+    .main-head-home .empty-div{
+        width: 0vw;
+    }
+
+    .main-head-home .name_logo{
+        width: 80vw;
+        margin: 0rem;
+        margin-left: 4.0rem;
+    }
+
+    .main-head-home .name_logo #name{
+        font-size: 3.85rem;
+        padding: 0rem 1.25rem;
+    }
+
+    .main-head-home nav{
+        width: 20vw;
+    }
+
+    .main-head-home nav ul{
+        position: absolute;
+        right: -250px;
+        /* min-height: 90vh; */
+        top: 8vh;
+        width: 20%;
+        background: rgba(0, 0, 0, 0.800);
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .main-head-home nav ul .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(100px at 90% -10%);
+    }
+
+    .main-head-home nav .hamburger{
+        position: relative;
+        width: 10vw;
+        height: 5.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .main-head-home nav .hamburger .line1,
+    .main-head-home nav .hamburger .line2,
+    .main-head-home nav .hamburger .line3 {
+        position: absolute;
+        width: 85%;
+        height: 0.5rem;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .main-head-home nav .hamburger .line1{
+        top: 1.7rem;
+    }
+    .main-head-home nav .hamburger .line2{
+        top: 3.4rem;
+    }
+    .main-head-home nav .hamburger .line3{
+        top: 5.1rem;
+    }
+
+    .section-home .homeinfo{
+        width: 90vw;
+    }
+
+    .section-home .homeinfo h2{
+        padding: 2rem;
+        font-size: 3.5rem;
+    }
+
+    .section-home .discovernow{
+        width: 45vw;
+    }
+    .section-home .discovernow a{
+        font-size: 3.5rem;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    /* FOOTER SECTION */
+
+    .main-foot-home .name-legal-home{
+        font-size: 0.85rem;
+        margin: 2rem 0rem;
+    }
+    
+}
+
+
+/* FUNCTIONS FOR JAVASCRIPT */
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.toggle .line1{
+    transform:  translateY(1.7rem) rotate(-45deg);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: translateY(-1.7rem) rotate(45deg);
+}
+
+
