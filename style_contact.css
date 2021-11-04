@@ -22,7 +22,7 @@ html{
     background: #7990ac;
     position: relative;
     top: 0%;
-    min-height: 10vh;
+    min-height: 15vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -34,23 +34,26 @@ html{
 .main-head-contact .empty-div{
     /* background: yellowgreen; */
     position: relative;
-    width: 33vw;
-    min-height: 2vh;
+    min-width: 33vw;
+    min-height: 15vh;
     display: flex;
 }
 
 .main-head-contact .name_logo{
     /* background: chocolate; */
     position: relative;
-    width: 34vw;
+    min-width: 34vw;
+    min-height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .main-head-contact .name_logo #name{
-    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     padding: 0rem 1.5rem;
+    font-size: 2vmax;
     border-style: solid;
     border-color: black;
     border-width: thin;
@@ -64,7 +67,8 @@ html{
 .main-head-contact nav{
     /* background: red; */
     position: relative;
-    width: 33vw;
+    min-width: 33vw;
+    min-height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -74,7 +78,7 @@ html{
 .main-head-contact nav ul{
     /* background: salmon; */
     position: relative;
-    width: 26.5vw;
+    min-width: 28vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,7 +88,7 @@ html{
 .main-head-contact nav ul li{
     /* background: chartreuse; */
     position: relative;
-    width: 5.3vw;
+    min-width: 7vw;
 }
 
 .main-head-contact nav ul li a{
@@ -94,7 +98,7 @@ html{
     font-weight: bold;
     color: black;
     color: white;
-    font-size: 1.25rem;
+    font-size: 1vmax;
 }
 
 .main-head-contact nav ul li a::after{
@@ -103,7 +107,7 @@ html{
     display: block;
     width: 0;
     left: 0%;
-    height: 0.10rem;
+    height: 0.05rem;
     bottom: -0.5rem;
     background: rgb(255, 255, 255);
     transition: width 0.2s ease-in;
@@ -120,7 +124,7 @@ html{
     color: white;
     /* background: greenyellow; */
     position: relative;
-    min-height: 80vh;
+    min-height: 75vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -132,7 +136,7 @@ html{
     background: rgb(211, 211, 211);
     position: relative;
     width: 100vw;
-    min-height: 80vh;
+    min-height: 75vh;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center;
@@ -141,17 +145,23 @@ html{
 .section-contact .mapandform .map,
 .section-contact .mapandform .form{
     position: relative;
-    width: 50vw;
-    min-height: 48vh;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    min-width: 50vw;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
 }
 
+.section-contact .mapandform .form{
+    /* background: yellow; */
+}
+
 .section-contact .mapandform .map iframe{
-    position: relative;
-    min-height: 48vh;
+    position: relative; 
+    min-height: 50vh;
     width: 100%;
     left: 20%;
     
@@ -160,13 +170,19 @@ html{
 .section-contact .mapandform .form .formtitle{
     /* background: cyan; */
     position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 100%;
-    min-height: 9.6vh;
+    min-height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.25vmax;
     color: black;
+}
+
+.section-contact .mapandform .form .formtitle h2{
+    /* background: red; */
 }
 
 
@@ -174,7 +190,7 @@ html{
     /* background: darkgoldenrod; */
     position: relative;
     width: 100%;
-    min-height: 38.4vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,7 +201,7 @@ html{
     /* background: cornflowerblue; */
     position: relative;
     width: 70%;
-    min-height: 38.4vh;
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -200,11 +216,14 @@ html{
     flex-direction: column;
     justify-content: center;
 }
+
 .section-contact .mapandform .form .formbox form .form-button{
     /* background: yellow; */
     position: relative;
     width: 100%;
-    min-height: 8.4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    min-height: 6vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,20 +232,23 @@ html{
 .section-contact .mapandform .form .formbox form .form-inputs .form-name,
 .section-contact .mapandform .form .formbox form .form-inputs .form-email,
 .section-contact .mapandform .form .formbox form .form-inputs .form-message {
+    /* background: green; */
     position: relative;
     width: 100%;
-    min-height: 9vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    min-height: 8vh;
     overflow: hidden;
 } 
 
 .form .form-name input,
 .form .form-email input,
 .form .form-message input {
-    background: rgb(211, 211, 211);
+    background: none;
     position: relative;
     width: 100%;
     min-height: 5vh;
-    font-size: 1.25rem;
+    font-size: 1vmax;
     padding-top: 1.5rem;
     border: none;
     outline: none;
@@ -235,8 +257,9 @@ html{
 .form .form-name label,
 .form .form-email label,
 .form .form-message label{
+    /* background: hotpink; */
     position: absolute;
-    font-size: 1.25rem;
+    font-size: 1vmax;
     font-weight: bolder;
     width: 100%;
     min-height: 5vh;
@@ -276,7 +299,7 @@ html{
 .form input:focus + .label-message .content-message,
 .form input:valid + .label-message .content-message{
     transform: translateY(-120%);
-    font-size: 1.25rem;
+    font-size: 0.85vmax;
     color: #5fa8d3;
 }
 
@@ -291,10 +314,9 @@ html{
 
 .section-contact .mapandform .form .formbox button{
     position: relative;
-    min-width: 30%;
-    min-height: 5vh;
+    min-width: 5vw;
     margin: 0.25rem 1.25rem;
-    padding: 0.15rem 1.15rem;
+    padding: 0.35rem 1.15rem;
     align-self: center;
     justify-self: center;
     text-align: center;
@@ -302,7 +324,7 @@ html{
     border: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.25vmax;
     cursor: pointer;
 }
 
@@ -318,7 +340,6 @@ html{
     top: 0%;
     min-height: 10vh;
     width: 100vw;
-    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -336,7 +357,7 @@ html{
 
 .main-foot .nameandinsta .name-legal{
     /* background: white; */
-    font-size: 0.45rem;
+    font-size: 0.35vmax;
     margin: 1rem 2rem;
 }
 
@@ -346,7 +367,7 @@ html{
 }
 
 .main-foot  .instagram img{
-    max-height: 2.0rem;
+    max-height: 1.5vmax;
 }
 
 
@@ -363,27 +384,30 @@ html{
     /* HEADER OF THE PAGE */
 
     .main-head-contact .empty-div{
-        width: 0vw;
+        min-width: 0vw;
     }
 
     .main-head-contact .name_logo{
-        width: 80vw;
-        margin-left: 2.5rem;
+        min-width: 80vw;
     }
 
     .main-head-contact .name_logo #name{
-        font-size: 3.85rem;
+        font-size: 2.8vmax;
+        margin-left: 5vw;
         padding: 0rem 1.25rem;
     }
 
     .main-head-contact nav{
-        width: 20vw;
+        min-width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .main-head-contact nav ul{
         position: absolute;
         right: -25px;
-        min-height: 90vh;
+        /* min-height: 90vh; */
         top: 8vh;
         width: 20%;
         background: rgba(0, 0, 0, 0.800);
@@ -400,8 +424,8 @@ html{
 
     .main-head-contact nav .hamburger{
         position: relative;
-        width: 10vw;
-        height: 5.5vh;
+        min-width: 8vw;
+        min-height: 3vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -413,20 +437,20 @@ html{
     .main-head-contact nav .hamburger .line2,
     .main-head-contact nav .hamburger .line3 {
         position: absolute;
-        width: 85%;
-        height: 0.5rem;
+        width: 100%;
+        height: 12%;
         background-color: white;
         border-radius: 10px;
     }
 
     .main-head-contact nav .hamburger .line1{
-        top: 1.7rem;
+        top: 0%;
     }
     .main-head-contact nav .hamburger .line2{
-        top: 3.4rem;
+        top: 44%;
     }
     .main-head-contact nav .hamburger .line3{
-        top: 5.1rem;
+        top: 88%;
     }  
 
     /* CONTENT SECTION OF THE PAGE */
@@ -434,7 +458,15 @@ html{
     .section-contact .mapandform .map,
     .section-contact .mapandform .form{
         width: 100%;
-        height: 50%;    
+        margin-top: 0vh;
+    }
+
+    .section-contact .mapandform .form{
+        min-height: 65vh;
+    }
+
+    .section-contact .mapandform .map{
+        margin-bottom: 0vh; 
     }
 
     .section-contact .mapandform .map iframe{
@@ -444,24 +476,36 @@ html{
     }
 
     .section-contact .mapandform .form .formtitle{
-        font-size: 2.75rem;
+        font-size: 2vmax;
     }
 
+    .section-contact .mapandform .form .formbox form .form-inputs{
+        /* background: red; */
+        min-height: 45vh;
+    }
+
+    .section-contact .mapandform .form .formbox form .form-inputs .form-name,
+    .section-contact .mapandform .form .formbox form .form-inputs .form-email,
+    .section-contact .mapandform .form .formbox form .form-inputs .form-message {
+        /* background: green; */
+        min-height: 12vh;
+    } 
+
     .section-contact .mapandform .form .formbox button{
-        margin-top: -15%;
-        font-size: 2.5rem;
+        padding: 0.15vmax 2.75vmax;
+        font-size: 2.75vmax;
     }
 
     .form .form-name label,
     .form .form-email label,
     .form .form-message label{
-        font-size: 2.25rem;
+        font-size: 1.75vmax;
     }
 
     .form .form-name input,
     .form .form-email input,
     .form .form-message input {
-        font-size: 2.25rem;
+        font-size: 1.75vmax;
         padding-top: 2.5rem;
     } 
 
@@ -472,7 +516,7 @@ html{
     .form input:focus + .label-message .content-message,
     .form input:valid + .label-message .content-message{
         transform: translateY(-150%);
-        font-size: 1.75rem;
+        font-size: 1.7vmax;
     }
 
     /* FOOTER SECTION */
@@ -482,11 +526,11 @@ html{
     }
 
     .main-foot .name-legal h1{
-        font-size: 1.55rem;
+        font-size: 1.15vmax;
     }
 
     .main-foot  .instagram img{
-        max-height: 3.5rem;
+        max-height: 3vmax;
     }
 
 }
