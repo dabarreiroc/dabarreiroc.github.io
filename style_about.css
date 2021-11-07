@@ -9,20 +9,17 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden;
 }
 
 .home{
-    background: url(./02_Images/desktop_landingpage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 60%;
-    min-height: 100vh;
+    height: 100vh;
     position: relative;
 }
 
-.main-head-home{
-    /* background: blue; */
+/* HEADER OF THE PAGE */
+
+.main-head-about{
+    background: #7990ac;
     position: relative;
     top: 0%;
     min-height: 15vh;
@@ -33,7 +30,8 @@ html{
     justify-content: center;
 }
 
-.main-head-home .empty-div{
+
+.main-head-about .empty-div{
     /* background: yellowgreen; */
     position: relative;
     min-width: 33vw;
@@ -41,7 +39,7 @@ html{
     display: flex;
 }
 
-.main-head-home .name_logo{
+.main-head-about .name_logo{
     /* background: chocolate; */
     position: relative;
     min-width: 34vw;
@@ -49,27 +47,25 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin: 2rem; */
 }
 
-.main-head-home .name_logo #name{
-    /* background: yellow; */
+.main-head-about .name_logo #name{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0rem 1.5rem;
     font-size: 2vmax;
     border-style: solid;
     border-color: black;
-    border-width: thin; 
+    border-width: thin;
 }
 
-.main-head-home .name_logo #name a{
+.main-head-about .name_logo #name a{
     text-decoration: none;
     color: black;
 }
 
-.main-head-home nav{
-    /* background: rgb(196, 144, 187); */
+.main-head-about nav{
+    /* background: red; */
     position: relative;
     min-width: 33vw;
     min-height: 15vh;
@@ -79,7 +75,7 @@ html{
     text-align: center;
 }
 
-.main-head-home nav ul{
+.main-head-about nav ul{
     /* background: salmon; */
     position: relative;
     min-width: 28vw;
@@ -87,16 +83,15 @@ html{
     align-items: center;
     justify-content: center;
     list-style: none;
-    z-index: 10;
 }
 
-.main-head-home nav ul li{
+.main-head-about nav ul li{
     /* background: chartreuse; */
     position: relative;
     min-width: 7vw;
 }
 
-.main-head-home nav ul li a{
+.main-head-about nav ul li a{
     /* background: cornflowerblue; */
     position: relative;
     text-decoration: none;
@@ -106,7 +101,7 @@ html{
     font-size: 1vmax;
 }
 
-.main-head-home nav ul li a::after{
+.main-head-about nav ul li a::after{
     position: absolute;
     content: '';
     display: block;
@@ -118,150 +113,151 @@ html{
     transition: width 0.2s ease-in;
 }
 
-.main-head-home nav ul li a:hover:after{
+.main-head-about nav ul li a:hover:after{
     width: 100%;
 }
 
-.section-home{
-    /* background: whitesmoke; */
+
+/* CONTENT SECTION OF THE PAGE */
+
+.section-about{
     color: white;
+    /* background: greenyellow; */
     position: relative;
-    top: 0%;
     min-height: 75vh;
     width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-about .about-info{
+    background: url(./02_Images/Silversmith_Landscape.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    min-height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-about .about-info .about-photo,
+.section-about .about-info .about-txt{
+    position: relative;
+    width: 50vw;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-about .about-info .about-txt .txt{
+    min-height: 70vh;
+    margin-top: 1vmax; 
+    margin-bottom: 1vmax; 
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, .85);
+    background: transparent;
+    backdrop-filter: blur(25px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.section-home .sectiondiv{
-    position: relative;
-    min-height: 75vh;
-}
-
-.section-home .homedivstop,
-.section-home .homedivsbottom{
-    /* background: chartreuse; */
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 37.5vh;
-}
-
-.section-home .homedivstop{
-    /* background: blue; */
-}
-
-
-.section-home .homeinfo{
-    /* background: slateblue; */
-    position: relative;
-    min-width: 80vw;
-    height: auto;
-    display: wrap;
-    align-self: center;
-    justify-content: center;
-    padding-bottom: 13rem;
-    padding-top: 3rem;
-}
-
-.section-home .homeinfo h2{
-    /* background: rosybrown; */
+.section-about .about-info .about-txt .txt h1{
+    margin: 2vmax;
     font-size: 1.75vmax;
 }
 
-.section-home .discovernow{
-    /* background: yellow; */
-    position: relative;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+.section-about .about-info .about-txt .txt p{
+    margin: 0.5vmax 4.5vmax;
+    font-size: 1.25vmax;
+    color: black;
+    font-weight: bold;
 }
+    
 
-.section-home .discovernow a{
+/* FOOTER OF THE PAGE */
+
+.main-foot{
     background: #7990ac;
-    font-size: 1.35vmax;
-    padding: 0.5rem 1rem;
-    color: white;
-    text-decoration: none;
-}
-
-.discovernow a:hover{
-    background: #304053;
-}
-
-.main-foot-home{
-    /* background: red; */
     position: relative;
-    bottom: 0%;
+    top: 0%;
     min-height: 10vh;
     width: 100vw;
-    font-size: 0.30vmax;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.main-foot-home .name-legal-home{
+.main-foot .nameandinsta{
+    /* background: rgb(87, 43, 65); */
     position: relative;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    justify-content: center;
 }
 
+.main-foot .nameandinsta .name-legal{
+    /* background: white; */
+    font-size: 0.35vmax;
+    margin: 1rem 2rem;
+}
 
+.main-foot .nameandinsta .instagram{
+    /* background: seagreen; */
+    padding: 0.75rem 1rem;
+}
+
+.main-foot  .instagram img{
+    max-height: 1.5vmax;
+}
 
 
 /* MEDIA QUERIES AND MOBILE/TABLET RESPONSIVENESS */
 
-
-@media only screen and (max-width: 1350px){
+@media only screen and (max-width: 1200px){
 
     /* FULL WEBSITE */
 
     html, body{
         overflow-x: hidden;
     }
-        
-    /* HOME SECTION */
-    .home{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 45% 50%;
-        min-height: 100vh;
-    }
 
-    .main-head-home .empty-div{
-        /* background: turquoise; */
+    /* HEADER OF THE PAGE */
+
+    .main-head-about .empty-div{
         min-width: 0vw;
     }
 
-    .main-head-home .name_logo{
-        /* background: yellow; */
+    .main-head-about .name_logo{
         min-width: 80vw;
     }
 
-    .main-head-home .name_logo #name{
+    .main-head-about .name_logo #name{
         font-size: 2.8vmax;
         margin-left: 5vw;
         padding: 0rem 1.25rem;
     }
 
-    .main-head-home nav{
-        /* background: red; */
+    .main-head-about nav{
         min-width: 20vw;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .main-head-home nav ul{
+    .main-head-about nav ul{
         position: absolute;
-        right: -250px;
+        right: -25px;
         /* min-height: 90vh; */
         top: 8vh;
         width: 20%;
@@ -272,13 +268,12 @@ html{
         transition: transform 0.5s ease-in;
     }
 
-    .main-head-home nav ul .nav-links.open{
+    .main-head-about nav ul .nav-links.open{
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path:circle(100px at 90% -10%);
     }
 
-    .main-head-home nav .hamburger{
-        /* background: blue; */
+    .main-head-about nav .hamburger{
         position: relative;
         min-width: 8vw;
         min-height: 3vh;
@@ -289,9 +284,9 @@ html{
         cursor: pointer;
     }
 
-    .main-head-home nav .hamburger .line1,
-    .main-head-home nav .hamburger .line2,
-    .main-head-home nav .hamburger .line3 {
+    .main-head-about nav .hamburger .line1,
+    .main-head-about nav .hamburger .line2,
+    .main-head-about nav .hamburger .line3 {
         position: absolute;
         width: 100%;
         height: 12%;
@@ -299,42 +294,56 @@ html{
         border-radius: 10px;
     }
 
-    .main-head-home nav .hamburger .line1{
+    .main-head-about nav .hamburger .line1{
         top: 0%;
-        /* background: blue; */
     }
-    .main-head-home nav .hamburger .line2{
+    .main-head-about nav .hamburger .line2{
         top: 44%;
     }
-    .main-head-home nav .hamburger .line3{
+    .main-head-about nav .hamburger .line3{
         top: 88%;
-        /* background: green; */
+    }  
+
+    /* CONTENT SECTION OF THE PAGE */
+
+    .section-about .about-info{
+        background-position: 50%;
     }
 
-    .section-home .homeinfo{
-        width: 90vw;
+    .section-about .about-info .about-photo,
+    .section-about .about-info .about-txt{
+        width: 100vw;
     }
 
-    .section-home .homeinfo h2{
-        padding: 2rem;
-        font-size: 2.8vmax;
-    }
-
-    .section-home .discovernow{
-        width: 45vw;
-    }
-    .section-home .discovernow a{
-        font-size: 2.5vmax;
-        padding: 0.5rem 1.5rem;
+    .section-about .about-info .about-txt .txt h1{
+        margin-top: 0vmax;
+        margin-left: 0vmax;
+        margin-right: 0vmax;
+        font-size: 3vmax;
     }
     
+    .section-about .about-info .about-txt .txt p{
+        font-size: 1.75vmax;
+        color: white;
+        font-weight: normal;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
     /* FOOTER SECTION */
 
-    .main-foot-home .name-legal-home{
-        font-size: 0.6vmax;
-        margin: 2rem 0rem;
+    .main-foot .nameandinsta{
+        width: 95vw;
     }
-    
+
+    .main-foot .name-legal h1{
+        font-size: 1.15vmax;
+    }
+
+    .main-foot  .instagram img{
+        max-height: 3vmax;
+    }
+
 }
 
 
