@@ -75,23 +75,23 @@ html{
     text-align: center;
 }
 
-.main-head-about nav ul{
+.main-head-about nav .nav-links{
     /* background: salmon; */
     position: relative;
     min-width: 28vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    list-style: none;
 }
 
-.main-head-about nav ul li{
+.main-head-about nav .nav-links li{
     /* background: chartreuse; */
     position: relative;
     min-width: 7vw;
+    list-style: none;
 }
 
-.main-head-about nav ul li a{
+.main-head-about nav .nav-links li a{
     /* background: cornflowerblue; */
     position: relative;
     text-decoration: none;
@@ -130,6 +130,7 @@ html{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .section-about .about-info{
@@ -228,8 +229,8 @@ html{
 
     /* FULL WEBSITE */
 
-    html, body{
-        overflow-x: hidden;
+    html,body{
+        overflow-x: hidden; 
     }
 
     /* HEADER OF THE PAGE */
@@ -249,28 +250,11 @@ html{
     }
 
     .main-head-about nav{
-        min-width: 20vw;
+        position: relative;
+        min-width: 21vw;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .main-head-about nav ul{
-        position: absolute;
-        right: -25px;
-        /* min-height: 90vh; */
-        top: 8vh;
-        width: 20%;
-        background: rgba(0, 0, 0, 0.800);
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-    }
-
-    .main-head-about nav ul .nav-links.open{
-        clip-path: circle(100px at 90% -10%);
-        -webkit-clip-path:circle(100px at 90% -10%);
     }
 
     .main-head-about nav .hamburger{
@@ -280,10 +264,13 @@ html{
         display: flex;
         align-items: center;
         justify-content: center;
-        display: inline-block;
+        display: block;
         cursor: pointer;
     }
-
+    
+    .main-head-about nav .hamburger div{
+        transition: all 0.15s ease;
+    }
     .main-head-about nav .hamburger .line1,
     .main-head-about nav .hamburger .line2,
     .main-head-about nav .hamburger .line3 {
@@ -302,8 +289,40 @@ html{
     }
     .main-head-about nav .hamburger .line3{
         top: 88%;
-    }  
+    } 
 
+    .main-head-about nav .nav-links{
+        position: absolute;
+        font-size: 5vmax;
+        top: 14.9vh;
+        right: 0%;
+        min-width: 101vw;
+        min-height: 88vh;
+        background: rgba(0, 0, 0, 0.8); 
+        backdrop-filter: blur(25px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    }
+
+    .main-head-about nav .nav-links li{
+        opacity: 0;
+    }
+
+    .main-head-about nav .nav-links li a{
+        font-size: 3.0vmax;
+    }
+
+    .main-head-about nav ul .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(100px at 90% -10%);
+    }
+
+  
     /* CONTENT SECTION OF THE PAGE */
 
     .section-about .about-info{
@@ -313,20 +332,23 @@ html{
     .section-about .about-info .about-photo,
     .section-about .about-info .about-txt{
         width: 100vw;
+        min-height: 70vh;
     }
 
     .section-about .about-info .about-txt .txt h1{
+        min-width: 100%;
         margin-top: 0vmax;
         margin-left: 0vmax;
         margin-right: 0vmax;
-        font-size: 3vmax;
+        padding: 0vmax;
+        font-size: 2.85vmax;
     }
     
     .section-about .about-info .about-txt .txt p{
         font-size: 1.75vmax;
         color: white;
         font-weight: normal;
-        text-align: justify;
+        text-align: center;
         text-justify: inter-word;
     }
 
@@ -349,18 +371,18 @@ html{
 
 /* FUNCTIONS FOR JAVASCRIPT */
 
-.nav-active{
+.main-head-about nav .nav-active{
     transform: translateX(0%);
 }
 
 @keyframes navLinkFade{
     from{
         opacity: 0;
-        transform: translateX(50px);
+        transform: translateX(100%);
     }
     to{
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(10%);
     }
 }
 
