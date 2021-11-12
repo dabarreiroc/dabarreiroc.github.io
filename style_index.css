@@ -214,8 +214,6 @@ html{
 }
 
 
-
-
 /* MEDIA QUERIES AND MOBILE/TABLET RESPONSIVENESS */
 
 
@@ -265,7 +263,7 @@ html{
         top: 14.9vh;
         right: 0%;
         min-width: 101vw;
-        min-height: 88vh;
+        min-height: 85.1vh;
         background: rgba(0, 0, 0, 0.8); 
         backdrop-filter: blur(25px);
         display: flex;
@@ -277,7 +275,9 @@ html{
         z-index: 10;
     }
 
-    .main-head-home nav .nav-links li{
+    .main-head-contact nav .nav-links li{
+        position: relative;
+        top: -3vh;
         opacity: 0;
     }
 

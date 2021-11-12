@@ -218,6 +218,10 @@ html{
     padding: 0.75rem 1rem;
 }
 
+.main-foot .instagram {
+    margin: 0vmax 2vmax;
+}
+
 .main-foot  .instagram img{
     max-height: 1.5vmax;
 }
@@ -297,7 +301,7 @@ html{
         top: 14.9vh;
         right: 0%;
         min-width: 101vw;
-        min-height: 88vh;
+        min-height: 85.1vh;
         background: rgba(0, 0, 0, 0.8); 
         backdrop-filter: blur(25px);
         display: flex;
@@ -309,7 +313,9 @@ html{
         z-index: 10;
     }
 
-    .main-head-about nav .nav-links li{
+    .main-head-contact nav .nav-links li{
+        position: relative;
+        top: -3vh;
         opacity: 0;
     }
 
