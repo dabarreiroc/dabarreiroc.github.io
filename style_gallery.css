@@ -120,69 +120,91 @@ html{
 
 /* CONTENT SECTION OF THE PAGE */
 
-.section-about{
-    color: white;
-    /* background: greenyellow; */
-    position: relative;
-    min-height: 75vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.section-gallery .blocks {
+    border: 2rem solid white;
+    background: white;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(12, 7.5vh);
+    grid-gap: 2rem;
+    justify-content: stretch;
 }
 
-.section-about .about-info{
-    background: url(./02_Images/Silversmith_Landscape.jpg);
+.section-gallery .blocks .block {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.section-gallery .blocks .block img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section-gallery .blocks .block1{
+    background: url(./02_Images/coming_soon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 65%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 1/9;
+}
+
+.section-gallery .blocks .block2{
+    background: url(./02_Images/werkzeuge.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: 100vw;
-    min-height: 75vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    grid-column: 4/7;
+    grid-row: 1/6;
 }
 
-.section-about .about-info .about-photo,
-.section-about .about-info .about-txt{
+.section-gallery .blocks .block3{
+    background: url(./02_Images/coal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 65%;
     position: relative;
-    width: 50vw;
-    min-height: 75vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+    grid-column: 7/11;
+    grid-row: 1/6;
 }
 
-.section-about .about-info .about-txt .txt{
-    min-height: 70vh;
-    margin-top: 1vmax; 
-    margin-bottom: 1vmax; 
-    margin-left: 1vmax;
-    margin-right: 1vmax;
-    box-shadow: 0 5px 35px rgba(0, 0, 0, .85);
-    background: transparent;
-    backdrop-filter: blur(25px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.section-gallery .blocks .block4{
+    background: url(./02_Images/ring_cards.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 65% 45%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 9/13; 
 }
 
-.section-about .about-info .about-txt .txt h1{
-    margin: 2vmax;
-    font-size: 1.75vmax;
+.section-gallery .blocks .block5{
+    background: url(./02_Images/ring_cut_closeup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    grid-column: 4/8;
+    grid-row: 6/13;
 }
 
-.section-about .about-info .about-txt .txt p{
-    margin: 0.5vmax 4.5vmax;
-    font-size: 1.25vmax;
-    color: black;
-    font-weight: bold;
+.section-gallery .blocks .block6{
+    background: url(./02_Images/triangular_ring.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 6/13;
 }
-    
+
 
 /* FOOTER OF THE PAGE */
 
@@ -301,7 +323,7 @@ html{
         top: 14.9vh;
         right: 0%;
         min-width: 101vw;
-        min-height: 85.1vh;
+        min-height: 85.4vh;
         background: rgba(0, 0, 0, 0.8); 
         backdrop-filter: blur(25px);
         display: flex;
@@ -331,31 +353,48 @@ html{
   
     /* CONTENT SECTION OF THE PAGE */
 
-    .section-about .about-info{
-        background-position: 50%;
-    }
-
-    .section-about .about-info .about-photo,
-    .section-about .about-info .about-txt{
-        width: 100vw;
-        min-height: 70vh;
-    }
-
-    .section-about .about-info .about-txt .txt h1{
-        min-width: 100%;
-        margin-top: 0vmax;
-        margin-left: 0vmax;
-        margin-right: 0vmax;
-        padding: 0vmax;
-        font-size: 2.85vmax;
+    .section-gallery .blocks {
+        border: 2rem solid rgb(204, 204, 204);
+        background: rgba(0,0,0,0.2);
+        min-height: 90vh;
+        display: grid;
+        grid-template-rows: repeat(10, 7.5vh);
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 1.0rem;
     }
     
-    .section-about .about-info .about-txt .txt p{
-        font-size: 1.75vmax;
-        color: white;
-        font-weight: normal;
-        text-align: center;
-        text-justify: inter-word;
+    .section-gallery .blocks .block1{
+        grid-row: 1/5;
+        grid-column: 1/7;
+    }
+    
+    .section-gallery .blocks .block2{
+        grid-row: 1/4;
+        grid-column: 7/13;
+    }
+    
+    .section-gallery .blocks .block3{
+        grid-row: 5/8;
+        grid-column: 1/7;
+    }
+    
+    .section-gallery .blocks .block4{
+        background: url(./02_Images/ring_cards.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 65% 100%;
+        grid-row: 4/8;
+        grid-column: 7/13; 
+    }
+
+    .section-gallery .blocks .block5{
+        grid-row: 8/12;
+        grid-column: 1/8;
+    }
+    
+    .section-gallery .blocks .block6{
+        grid-row: 8/12;
+        grid-column: 8/13;
     }
 
     /* FOOTER SECTION */

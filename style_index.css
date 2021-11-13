@@ -275,7 +275,7 @@ html{
         z-index: 10;
     }
 
-    .main-head-contact nav .nav-links li{
+    .main-head-home nav .nav-links li{
         position: relative;
         top: -3vh;
         opacity: 0;
@@ -355,6 +355,7 @@ html{
 
 .main-head-home nav .nav-active{
     transform: translateX(0%);
+    position: fixed;
 }
 
 @keyframes navLinkFade{
