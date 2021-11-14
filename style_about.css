@@ -1,5 +1,9 @@
 /* Global styles */
-@import url(//fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swaps);
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./00_Fonts/Webfonts/Montserrat-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./00_Fonts/Webfonts/Montserrat-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
 
 *{
     margin: 0;
