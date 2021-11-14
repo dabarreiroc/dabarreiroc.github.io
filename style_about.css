@@ -387,6 +387,11 @@ html{
     position: fixed;
 }
 
+body .nav-active {
+    overflow:hidden;
+    position: fixed;
+}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
