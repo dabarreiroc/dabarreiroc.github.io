@@ -69,7 +69,7 @@ html{
     color: black;
 }
 
-.main-head-about .nav-menu{
+.main-head-about nav{
     /* background: red; */
     position: relative;
     min-width: 33vw;
@@ -80,7 +80,7 @@ html{
     text-align: center;
 }
 
-.main-head-about .nav-menu .nav-links{
+.main-head-about nav .nav-links{
     /* background: salmon; */
     position: relative;
     min-width: 28vw;
@@ -89,14 +89,14 @@ html{
     justify-content: center;
 }
 
-.main-head-about .nav-menu .nav-links li{
+.main-head-about nav .nav-links li{
     /* background: chartreuse; */
     position: relative;
     min-width: 7vw;
     list-style: none;
 }
 
-.main-head-about .nav-menu .nav-links li a{
+.main-head-about nav .nav-links li a{
     /* background: cornflowerblue; */
     position: relative;
     text-decoration: none;
@@ -106,7 +106,7 @@ html{
     font-size: 1vmax;
 }
 
-.main-head-about .nav-menu ul li a::after{
+.main-head-about nav ul li a::after{
     position: absolute;
     content: '';
     display: block;
@@ -118,7 +118,7 @@ html{
     transition: width 0.2s ease-in;
 }
 
-.main-head-about .nav-menu ul li a:hover:after{
+.main-head-about nav ul li a:hover:after{
     width: 100%;
 }
 
@@ -169,7 +169,6 @@ html{
     margin-right: 1vmax;
     box-shadow: 0 5px 35px rgba(0, 0, 0, .85);
     background: transparent;
-    -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     display: flex;
     flex-direction: column;
@@ -259,7 +258,7 @@ html{
         padding: 0rem 1.25rem;
     }
 
-    .main-head-about .nav-menu{
+    .main-head-about nav{
         position: relative;
         min-width: 21vw;
         display: flex;
@@ -267,7 +266,7 @@ html{
         justify-content: center;
     }
 
-    .main-head-about .nav-menu .hamburger{
+    .main-head-about nav .hamburger{
         position: relative;
         min-width: 8vw;
         min-height: 3vh;
@@ -278,12 +277,12 @@ html{
         cursor: pointer;
     }
     
-    .main-head-about .nav-menu .hamburger div{
+    .main-head-about nav .hamburger div{
         transition: all 0.15s ease;
     }
-    .main-head-about .nav-menu .hamburger .line1,
-    .main-head-about .nav-menu .hamburger .line2,
-    .main-head-about .nav-menu .hamburger .line3 {
+    .main-head-about nav .hamburger .line1,
+    .main-head-about nav .hamburger .line2,
+    .main-head-about nav .hamburger .line3 {
         position: absolute;
         width: 100%;
         height: 12%;
@@ -291,17 +290,17 @@ html{
         border-radius: 10px;
     }
 
-    .main-head-about .nav-menu .hamburger .line1{
+    .main-head-about nav .hamburger .line1{
         top: 0%;
     }
-    .main-head-about .nav-menu .hamburger .line2{
+    .main-head-about nav .hamburger .line2{
         top: 44%;
     }
-    .main-head-about .nav-menu .hamburger .line3{
+    .main-head-about nav .hamburger .line3{
         top: 88%;
     } 
 
-    .main-head-about .nav-menu .nav-links{
+    .main-head-about nav .nav-links{
         position: absolute;
         font-size: 5vmax;
         top: 14.9vh;
@@ -309,7 +308,6 @@ html{
         min-width: 101vw;
         min-height: 85.1vh;
         background: rgba(0, 0, 0, 0.8); 
-        -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
         display: flex;
         flex-direction: column;
@@ -320,15 +318,21 @@ html{
         z-index: 10;
     }
 
-    .main-head-about .nav-menu .nav-links li{
+    .main-head-about nav .nav-links li{
         position: relative;
         top: -3vh;
         opacity: 0;
     }
 
-    .main-head-about .nav-menu .nav-links li a{
+    .main-head-about nav .nav-links li a{
         font-size: 3.0vmax;
     }
+
+    .main-head-about nav ul .nav-links.open{
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path:circle(100px at 90% -10%);
+    }
+
   
     /* CONTENT SECTION OF THE PAGE */
 
@@ -378,15 +382,15 @@ html{
 
 /* FUNCTIONS FOR JAVASCRIPT */
 
-.main-head-about .nav-menu .nav-active{
+.main-head-about nav .nav-active{
     transform: translateX(0%);
-    position: fixed;  
+    position: fixed;
 }
 
-.main-head-about .block-scroll{
-    overflow: hidden;
+body .nav-active {
+    overflow:hidden;
+    position: fixed;
 }
-
 
 @keyframes navLinkFade{
     from{
