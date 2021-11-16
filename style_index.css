@@ -360,7 +360,6 @@ html{
 }
 
 .block-scroll {
-    position: fixed;
     overflow: hidden;
 }
 
