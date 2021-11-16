@@ -388,9 +388,9 @@ html{
     position: fixed;
 }
 
-body .nav-active {
-    overflow:hidden;
-    position: fixed;
+.block-scroll {
+    height: 100vh;
+    overflow: hidden;
 }
 
 @keyframes navLinkFade{
