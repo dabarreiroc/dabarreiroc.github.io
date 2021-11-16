@@ -385,11 +385,11 @@ html{
 
 .main-head-about nav .nav-active{
     transform: translateX(0%);
-    position: fixed;
+    /* position: fixed; */
 }
-
+ 
 .block-scroll {
-    height: 100vh;
+    position: fixed;
     overflow: hidden;
 }
 
