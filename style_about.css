@@ -169,7 +169,7 @@ html{
     margin-right: 1vmax;
     box-shadow: 0 5px 35px rgba(0, 0, 0, .85);
     background: transparent;
-    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
     display: flex;
     flex-direction: column;
     justify-content: center;
