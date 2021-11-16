@@ -6,6 +6,10 @@ const navSlide = () => {
 
     // togle nav
     hamburger.addEventListener('click', () => {
+
+        //block scroll on the back when the menu is opened
+        nav_menu.classList.toggle('block-scroll');
+
         nav.classList.toggle('nav-active');
 
         // animate links
@@ -21,8 +25,7 @@ const navSlide = () => {
         //close symbol after menu is out
         hamburger.classList.toggle('toggle');
 
-        //block scroll on the back when the menu is opened
-        nav_menu.classList.toggle('block-scroll');
+
     });
 }
 

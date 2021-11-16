@@ -422,6 +422,11 @@ html{
     position: fixed;
 }
 
+.block-scroll {
+    position: fixed;
+    overflow: hidden;
+}
+
 @keyframes navLinkFade{
     from{
         opacity: 0;
