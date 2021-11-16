@@ -308,7 +308,7 @@ html{
         min-width: 101vw;
         min-height: 85.1vh;
         background: rgba(0, 0, 0, 0.8); 
-        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -384,13 +384,13 @@ html{
 
 .main-head-about nav .nav-active{
     transform: translateX(0%);
+    position: fixed;  
+}
+
+.main-head-about .block-scroll{
     position: fixed;
 }
 
-body .nav-active {
-    overflow:hidden;
-    position: fixed;
-}
 
 @keyframes navLinkFade{
     from{
