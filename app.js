@@ -1,6 +1,7 @@
 const navSlide = () => {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
+    const nav_menu = document.querySelector('.nav-menu');
     const navLinks = document.querySelectorAll('.nav-links li');
 
     // togle nav
@@ -19,6 +20,8 @@ const navSlide = () => {
 
         //close symbol after menu is out
         hamburger.classList.toggle('toggle');
+
+        nav_menu.classList.toggle('block-scroll');
     });
 }
 
