@@ -168,7 +168,6 @@ html{
     margin-left: 1vmax;
     margin-right: 1vmax;
     box-shadow: 0 5px 35px rgba(0, 0, 0, .85);
-    background: transparent;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
     display: flex;
