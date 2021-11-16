@@ -25,7 +25,6 @@ const navSlide = () => {
         //close symbol after menu is out
         hamburger.classList.toggle('toggle');
 
-
     });
 }
 
