@@ -370,12 +370,12 @@ html{
 
 /* FUNCTIONS FOR JAVASCRIPT */
 
-.main-head-home nav .nav-active{
+.home .home-div .main-head-home .nav-active{
     transform: translateX(0%);
     position: fixed;
 }
 
-.block-scroll {
+.home .block-scroll {
     overflow: hidden;
     position: fixed;
 }

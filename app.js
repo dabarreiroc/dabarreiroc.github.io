@@ -1,7 +1,7 @@
 const navSlide = () => {
     const hamburger = document.querySelector('.hamburger');
     const nav = document.querySelector('.nav-links');
-    const nav_menu = document.querySelector('.home');
+    const nav_menu = document.querySelector('.home-div');
     const navLinks = document.querySelectorAll('.nav-links li');
 
     // togle nav
