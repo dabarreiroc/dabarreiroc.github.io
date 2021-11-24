@@ -12,7 +12,16 @@ html{
     overflow-x: hidden;
 }
 
-.home{
+/* .home{
+    background: url(./02_Images/desktop_landingpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 60%;
+    min-height: 100vh;
+    position: relative;
+} */
+
+.home-div{
     background: url(./02_Images/desktop_landingpage.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -226,7 +235,14 @@ html{
     }
         
     /* HOME SECTION */
-    .home{
+    /* .home{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% 50%;
+        min-height: 100vh;
+    } */
+
+    .home-div{
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 45% 50%;
@@ -361,6 +377,7 @@ html{
 
 .block-scroll {
     overflow: hidden;
+    position: fixed;
 }
 
 @keyframes navLinkFade{

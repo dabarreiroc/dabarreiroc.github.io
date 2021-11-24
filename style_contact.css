@@ -278,7 +278,7 @@ html{
     height: 100%;
     left: 0%;
     border-bottom: 0.3rem solid #5fa8d3;
-    transition: transform 1s;
+    transition: transform 0.75s;
     transform: translateX(-100%);
 
 } 
