@@ -563,9 +563,9 @@ html{
     position: fixed;
 }
 
-.block-scroll {
-    position: fixed;
+.home .block-scroll {
     overflow: hidden;
+    position: fixed;
 }
 
 @keyframes navLinkFade{
