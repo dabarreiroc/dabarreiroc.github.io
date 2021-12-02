@@ -170,8 +170,8 @@ html{
 .section-contact .mapandform .form .formtitle{
     /* background: cyan; */
     position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: max(1vh,5vw);
+    /* margin-bottom: 1rem; */
     width: 100%;
     min-height: 10vh;
     display: flex;
@@ -235,21 +235,27 @@ html{
     /* background: green; */
     position: relative;
     width: 100%;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    min-height: 8vh;
+    bottom: 0%;
+    margin-top: 0vh;
+    margin-bottom: 3vh;
+    min-height: 7vh;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap-reverse;
 } 
 
 .form .form-name input,
 .form .form-email input,
 .form .form-message input {
     background: none;
-    position: relative;
+    /* background: lightsalmon; */
+    position: absolute;
     width: 100%;
-    min-height: 5vh;
+    bottom: 0%;
+    min-height: 7vh;
     font-size: 1vmax;
-    padding-top: 1.5rem;
+    padding-top: 10vh;
+    padding-bottom: 0.25vh;
     border: none;
     outline: none;
 } 
@@ -261,12 +267,13 @@ html{
     position: absolute;
     font-size: 1vmax;
     font-weight: bolder;
+    top: 0%;
     width: 100%;
-    min-height: 5vh;
+    min-height: 7vh;
     left: 0%;
     color: black;
     pointer-events: none;
-    border-bottom: 0.15rem solid black;
+    border-bottom: 0.1rem solid black;
 }
 
 .form .form-name label::after,
@@ -277,10 +284,10 @@ html{
     width: 100%;
     height: 100%;
     left: 0%;
-    border-bottom: 0.3rem solid #5fa8d3;
-    transition: transform 0.75s;
+    bottom: -3.25%;
+    border-bottom: 0.23rem solid #5fa8d3;
+    transition: transform 0.25s;
     transform: translateX(-100%);
-
 } 
 
 .content-name,
@@ -288,7 +295,7 @@ html{
 .content-message{
     position: absolute;
     bottom: 5%;
-    transition: all 1s ease;
+    transition: all 0.25s ease;
     overflow-wrap: break-words;
 }
 
@@ -298,8 +305,8 @@ html{
 .form input:valid + .label-email .content-email,
 .form input:focus + .label-message .content-message,
 .form input:valid + .label-message .content-message{
-    transform: translateY(-120%);
-    font-size: 0.85vmax;
+    transform: translateY(-150%);
+    font-size: 0.75vmax;
     color: #5fa8d3;
 }
 
@@ -410,7 +417,7 @@ html{
         top: 14.9vh;
         right: 0%;
         min-width: 101vw;
-        min-height: 85.1vh;
+        min-height: 85.4vh;
         background: rgba(0, 0, 0, 0.8); 
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
@@ -419,7 +426,7 @@ html{
         justify-content: space-evenly;
         align-items: center;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.25s ease-in;
         z-index: 10;
     }
 
@@ -478,15 +485,16 @@ html{
     }
 
     .section-contact .mapandform .form{
-        min-height: 65vh;
+        min-height: max(65vh,65vw);
     }
 
     .section-contact .mapandform .map{
         margin-bottom: 0vh; 
+        min-height: max(50vh,50vw);
     }
 
     .section-contact .mapandform .map iframe{
-        height: 100%;
+        height: max(50vh,50vw);
         width: 100%;
         left: 0%;
     }
@@ -497,32 +505,42 @@ html{
 
     .section-contact .mapandform .form .formbox form .form-inputs{
         /* background: red; */
-        min-height: 45vh;
+        min-height: max(45vh,45vw);
     }
 
     .section-contact .mapandform .form .formbox form .form-inputs .form-name,
     .section-contact .mapandform .form .formbox form .form-inputs .form-email,
     .section-contact .mapandform .form .formbox form .form-inputs .form-message {
         /* background: green; */
-        min-height: 12vh;
+        margin-bottom: max(3vh,6vw);
+        min-height: max(12vh,9vw);
     } 
-
-    .section-contact .mapandform .form .formbox button{
-        padding: 0.15vmax 2.75vmax;
-        font-size: 2.75vmax;
-    }
-
-    .form .form-name label,
-    .form .form-email label,
-    .form .form-message label{
-        font-size: 1.75vmax;
-    }
 
     .form .form-name input,
     .form .form-email input,
     .form .form-message input {
+        background: none;
+        /* background: lightsalmon; */
+        bottom: 5vh;
+        min-height: 7vh;
         font-size: 1.75vmax;
-        padding-top: 2.5rem;
+        padding-top: 10vh;
+    } 
+
+    .form .form-name label,
+    .form .form-email label,
+    .form .form-message label{
+        /* background: magenta; */
+        min-height: max(7vh,7vw);
+        font-size: 2vmax;
+        border-bottom: 0.25vmin solid black; 
+    }
+
+    .form .form-name label::after,
+    .form .form-email label::after,
+    .form .form-message label::after {
+        bottom: -0.4vmin;
+        border-bottom: 0.55vmin solid #5fa8d3;
     } 
 
     .form input:focus + .label-name .content-name,
@@ -534,6 +552,11 @@ html{
         transform: translateY(-150%);
         font-size: 1.7vmax;
     }
+
+    .section-contact .mapandform .form .formbox button{
+        padding: 0.15vmax 2.75vmax;
+        font-size: 2.75vmax;
+    } 
 
     /* FOOTER SECTION */
 
