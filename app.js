@@ -29,3 +29,32 @@ const navSlide = () => {
 }
 
 navSlide();
+
+
+// When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar
+const hideNavBar = () => {
+    // THIS IS FOR DESKTOP DEVICES
+    // Set a previous position variable that is the position of Y on the page
+    var prevScrollpos = window.pageYOffset;
+    // create on scroll function
+    window.onscroll = function () {
+        // when scrolling update continuosly the position of the Y 
+        var currentScrollPos = window.pageYOffset;
+        // when going downwards just hide the navbar
+        if (prevScrollpos > currentScrollPos) {
+            document.querySelector('.main-head').style.top = "0"
+        }
+        // when going upwards, if prevscroll < currentScroll then show the navbar again
+        else {
+            document.querySelector('.main-head').style.top = "-15vh"
+        }
+        // after checking update the position of the previous position with the last read value 
+        prevScrollpos = currentScrollPos;
+    }
+    // THIS IS FOR MOBILE DEVICES, THERE IS NO SCROLL ONLY TOUCH
+
+}
+
+hideNavBar();
+
+

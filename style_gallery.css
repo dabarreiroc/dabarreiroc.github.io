@@ -9,6 +9,7 @@
 html{
     scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 .home{
@@ -18,20 +19,22 @@ html{
 
 /* HEADER OF THE PAGE */
 
-.main-head-about{
+.main-head{
     background: #7990ac;
-    position: relative;
-    top: 0%;
+    position: sticky;
+    top: 0;
     min-height: 15vh;
     width: 100vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: 10;
+    transition: top 0.3s;
 }
 
 
-.main-head-about .empty-div{
+.main-head .empty-div{
     /* background: yellowgreen; */
     position: relative;
     min-width: 33vw;
@@ -39,7 +42,7 @@ html{
     display: flex;
 }
 
-.main-head-about .name_logo{
+.main-head .name_logo{
     /* background: chocolate; */
     position: relative;
     min-width: 34vw;
@@ -49,7 +52,7 @@ html{
     justify-content: center;
 }
 
-.main-head-about .name_logo #name{
+.main-head .name_logo #name{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0rem 1.5rem;
@@ -59,12 +62,12 @@ html{
     border-width: thin;
 }
 
-.main-head-about .name_logo #name a{
+.main-head .name_logo #name a{
     text-decoration: none;
     color: black;
 }
 
-.main-head-about nav{
+.main-head nav{
     /* background: red; */
     position: relative;
     min-width: 33vw;
@@ -75,7 +78,7 @@ html{
     text-align: center;
 }
 
-.main-head-about nav .nav-links{
+.main-head nav .nav-links{
     /* background: salmon; */
     position: relative;
     min-width: 28vw;
@@ -84,14 +87,14 @@ html{
     justify-content: center;
 }
 
-.main-head-about nav .nav-links li{
+.main-head nav .nav-links li{
     /* background: chartreuse; */
     position: relative;
     min-width: 7vw;
     list-style: none;
 }
 
-.main-head-about nav .nav-links li a{
+.main-head nav .nav-links li a{
     /* background: cornflowerblue; */
     position: relative;
     text-decoration: none;
@@ -101,7 +104,7 @@ html{
     font-size: 1vmax;
 }
 
-.main-head-about nav ul li a::after{
+.main-head nav ul li a::after{
     position: absolute;
     content: '';
     display: block;
@@ -113,7 +116,7 @@ html{
     transition: width 0.2s ease-in;
 }
 
-.main-head-about nav ul li a:hover:after{
+.main-head nav ul li a:hover:after{
     width: 100%;
 }
 
@@ -121,12 +124,12 @@ html{
 /* CONTENT SECTION OF THE PAGE */
 
 .section-gallery .blocks {
-    border: 2rem solid white;
-    background: white;
+    border: 2rem solid rgb(204, 204, 204);
+    background: rgba(0,0,0,0.2);
     min-height: 90vh;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(12, 7.5vh);
+    grid-template-rows: repeat(48, 7.5vh);
     grid-gap: 2rem;
     justify-content: stretch;
 }
@@ -205,6 +208,175 @@ html{
     grid-row: 6/13;
 }
 
+.section-gallery .blocks .block7{
+    background: url(./02_Images/carmen_landing_page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 1/8;
+    grid-row: 13/17;
+}
+
+.section-gallery .blocks .block8{
+    background: url(./02_Images/indian_gold.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 13/17;
+}
+
+.section-gallery .blocks .block9{
+    background: url(./02_Images/girl_black_earrings.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 17/21;
+}
+
+.section-gallery .blocks .block10{
+    background: url(./02_Images/desktop_landingpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 4/11;
+    grid-row: 17/25;
+}
+
+.section-gallery .blocks .block11{
+    background: url(./02_Images/simple_ring_model.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 21/25;
+}
+
+.section-gallery .blocks .block12{
+    background: url(./02_Images/black_left.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 25/29;
+}
+
+.section-gallery .blocks .block13{
+    background: url(./02_Images/vertical_girl_neck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 4/8;
+    grid-row: 25/33;
+}
+
+.section-gallery .blocks .block14{
+    background: url(./02_Images/black_right.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 25/29;
+}
+
+.section-gallery .blocks .block15{
+    background: url(./02_Images/vertical_set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 29/37;
+}
+
+.section-gallery .blocks .block16{
+    background: url(./02_Images/earrings_set.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 29/33;
+}
+
+.section-gallery .blocks .block17{
+    background: url(./02_Images/horizontal_rings.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    position: relative;
+    grid-column: 4/11;
+    grid-row: 33/37;
+}
+
+.section-gallery .blocks .block18{
+    background: url(./02_Images/horizontal_black.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 65%;
+    position: relative;
+    grid-column: 1/8;
+    grid-row: 37/41;
+}
+
+.section-gallery .blocks .block19{
+    background: url(./02_Images/right_ring_model.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 37/45;
+}
+
+.section-gallery .blocks .block20{
+    background: url(./02_Images/ring_model.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    position: relative;
+    grid-column: 1/4;
+    grid-row: 41/49;
+}
+
+.section-gallery .blocks .block21{
+    background: url(./02_Images/double_color_vertical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    grid-column: 4/8;
+    grid-row: 41/45;
+}
+
+.section-gallery .blocks .block22{
+    background: url(./02_Images/woman_neck.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+    position: relative;
+    grid-column: 4/8;
+    grid-row: 45/50;
+}
+
+.section-gallery .blocks .block23{
+    background: url(./02_Images/clean_desk_wallhangers.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 80%;
+    position: relative;
+    grid-column: 8/11;
+    grid-row: 45/49;
+}
 
 /* FOOTER OF THE PAGE */
 
@@ -261,21 +433,26 @@ html{
 
     /* HEADER OF THE PAGE */
 
-    .main-head-about .empty-div{
+    .main-head{
+        position: relative;
+        top: 0%;  
+    }
+
+    .main-head .empty-div{
         min-width: 0vw;
     }
 
-    .main-head-about .name_logo{
+    .main-head .name_logo{
         min-width: 80vw;
     }
 
-    .main-head-about .name_logo #name{
+    .main-head .name_logo #name{
         font-size: 2.8vmax;
         margin-left: 5vw;
         padding: 0rem 1.25rem;
     }
 
-    .main-head-about nav{
+    .main-head nav{
         position: relative;
         min-width: 21vw;
         display: flex;
@@ -283,7 +460,7 @@ html{
         justify-content: center;
     }
 
-    .main-head-about nav .hamburger{
+    .main-head nav .hamburger{
         position: relative;
         min-width: 8vw;
         min-height: 3vh;
@@ -294,12 +471,12 @@ html{
         cursor: pointer;
     }
     
-    .main-head-about nav .hamburger div{
+    .main-head nav .hamburger div{
         transition: all 0.15s ease;
     }
-    .main-head-about nav .hamburger .line1,
-    .main-head-about nav .hamburger .line2,
-    .main-head-about nav .hamburger .line3 {
+    .main-head nav .hamburger .line1,
+    .main-head nav .hamburger .line2,
+    .main-head nav .hamburger .line3 {
         position: absolute;
         width: 100%;
         height: 12%;
@@ -307,17 +484,17 @@ html{
         border-radius: 10px;
     }
 
-    .main-head-about nav .hamburger .line1{
+    .main-head nav .hamburger .line1{
         top: 0%;
     }
-    .main-head-about nav .hamburger .line2{
+    .main-head nav .hamburger .line2{
         top: 44%;
     }
-    .main-head-about nav .hamburger .line3{
+    .main-head nav .hamburger .line3{
         top: 88%;
     } 
 
-    .main-head-about nav .nav-links{
+    .main-head nav .nav-links{
         position: absolute;
         font-size: 5vmax;
         top: 14.9vh;
@@ -336,17 +513,17 @@ html{
         z-index: 10;
     }
 
-    .main-head-about nav .nav-links li{
+    .main-head nav .nav-links li{
         position: relative;
         top: -3vh;
         opacity: 0;
     }
 
-    .main-head-about nav .nav-links li a{
+    .main-head nav .nav-links li a{
         font-size: 3.0vmax;
     }
 
-    .main-head-about nav ul .nav-links.open{
+    .main-head nav ul .nav-links.open{
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path:circle(100px at 90% -10%);
     }
@@ -359,7 +536,7 @@ html{
         background: rgba(0,0,0,0.2);
         min-height: 90vh;
         display: grid;
-        grid-template-rows: repeat(10, 7.5vh);
+        grid-template-rows: repeat(59, 7.5vh);
         grid-template-columns: repeat(12, 1fr);
         grid-gap: 1.0rem;
     }
@@ -398,6 +575,92 @@ html{
         grid-column: 8/13;
     }
 
+    .section-gallery .blocks .block7{
+        grid-row: 12/21;
+        grid-column: 1/6;
+    }
+
+    .section-gallery .blocks .block8{
+        grid-row: 12/15;
+        grid-column: 6/13; 
+    }
+
+    .section-gallery .blocks .block9{
+        grid-row: 21/24;
+        grid-column: 1/6;
+    }
+
+    .section-gallery .blocks .block10{
+        grid-row: 15/24;
+        grid-column: 6/13;
+    }
+
+    .section-gallery .blocks .block11{
+        grid-row: 24/28;
+        grid-column: 1/7;
+    }
+
+    .section-gallery .blocks .block12{
+        grid-row: 24/32;
+        grid-column: 7/13;
+    }
+
+    .section-gallery .blocks .block13{
+        grid-row: 28/32;
+        grid-column: 1/7;
+    }
+
+    .section-gallery .blocks .block14{
+        grid-row: 32/36;
+        grid-column: 1/6;
+    }
+
+    .section-gallery .blocks .block15{
+        grid-row: 32/36;
+        grid-column: 6/13;
+    }
+
+    .section-gallery .blocks .block16{
+        grid-row: 36/44;
+        grid-column: 1/6;
+    }
+
+    .section-gallery .blocks .block17{
+        grid-row: 36/40;
+        grid-column: 6/13;
+    }
+
+    .section-gallery .blocks .block18{
+        grid-row: 44/48;
+        grid-column: 1/6;
+    }
+
+    .section-gallery .blocks .block19{
+        grid-row: 40/48;
+        grid-column: 6/13;
+    }
+
+    .section-gallery .blocks .block20{
+        grid-row: 48/52;
+        grid-column: 1/13;
+    }
+
+    .section-gallery .blocks .block21{
+        grid-row: 52/64;
+        grid-column: 1/7;
+    }
+
+    .section-gallery .blocks .block22{
+        grid-row: 52/56;
+        grid-column: 7/13;
+    }
+
+    .section-gallery .blocks .block23{
+        grid-row: 56/60;
+        grid-column: 7/13;
+    }
+    
+
     /* FOOTER SECTION */
 
     .main-foot .nameandinsta{
@@ -417,7 +680,7 @@ html{
 
 /* FUNCTIONS FOR JAVASCRIPT */
 
-.main-head-about nav .nav-active{
+.main-head nav .nav-active{
     transform: translateX(0%);
     position: fixed;
 }
@@ -425,6 +688,10 @@ html{
 .home .block-scroll {
     overflow: hidden;
     position: fixed;
+}
+
+.home-div .hide-navbar{
+    top: -20vh;
 }
 
 @keyframes navLinkFade{

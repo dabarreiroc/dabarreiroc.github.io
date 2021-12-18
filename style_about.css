@@ -23,7 +23,7 @@ html{
 
 /* HEADER OF THE PAGE */
 
-.main-head-about{
+.main-head{
     background: #7990ac;
     position: relative;
     top: 0%;
@@ -36,7 +36,7 @@ html{
 }
 
 
-.main-head-about .empty-div{
+.main-head .empty-div{
     /* background: yellowgreen; */
     position: relative;
     min-width: 33vw;
@@ -44,7 +44,7 @@ html{
     display: flex;
 }
 
-.main-head-about .name_logo{
+.main-head .name_logo{
     /* background: chocolate; */
     position: relative;
     min-width: 34vw;
@@ -54,7 +54,7 @@ html{
     justify-content: center;
 }
 
-.main-head-about .name_logo #name{
+.main-head .name_logo #name{
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 0rem 1.5rem;
@@ -64,12 +64,12 @@ html{
     border-width: thin;
 }
 
-.main-head-about .name_logo #name a{
+.main-head .name_logo #name a{
     text-decoration: none;
     color: black;
 }
 
-.main-head-about nav{
+.main-head nav{
     /* background: red; */
     position: relative;
     min-width: 33vw;
@@ -80,7 +80,7 @@ html{
     text-align: center;
 }
 
-.main-head-about nav .nav-links{
+.main-head nav .nav-links{
     /* background: salmon; */
     position: relative;
     min-width: 28vw;
@@ -89,14 +89,14 @@ html{
     justify-content: center;
 }
 
-.main-head-about nav .nav-links li{
+.main-head nav .nav-links li{
     /* background: chartreuse; */
     position: relative;
     min-width: 7vw;
     list-style: none;
 }
 
-.main-head-about nav .nav-links li a{
+.main-head nav .nav-links li a{
     /* background: cornflowerblue; */
     position: relative;
     text-decoration: none;
@@ -106,7 +106,7 @@ html{
     font-size: 1vmax;
 }
 
-.main-head-about nav ul li a::after{
+.main-head nav ul li a::after{
     position: absolute;
     content: '';
     display: block;
@@ -118,7 +118,7 @@ html{
     transition: width 0.2s ease-in;
 }
 
-.main-head-about nav ul li a:hover:after{
+.main-head nav ul li a:hover:after{
     width: 100%;
 }
 
@@ -139,7 +139,7 @@ html{
 }
 
 .section-about .about-info{
-    background: url(./02_Images/Carmen_About_WB.jpg);
+    background: url(./02_Images/Silversmith_Landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -244,21 +244,21 @@ html{
 
     /* HEADER OF THE PAGE */
 
-    .main-head-about .empty-div{
+    .main-head .empty-div{
         min-width: 0vw;
     }
 
-    .main-head-about .name_logo{
+    .main-head .name_logo{
         min-width: 80vw;
     }
 
-    .main-head-about .name_logo #name{
+    .main-head .name_logo #name{
         font-size: 2.8vmax;
         margin-left: 5vw;
         padding: 0rem 1.25rem;
     }
 
-    .main-head-about nav{
+    .main-head nav{
         position: relative;
         min-width: 21vw;
         display: flex;
@@ -266,7 +266,7 @@ html{
         justify-content: center;
     }
 
-    .main-head-about nav .hamburger{
+    .main-head nav .hamburger{
         position: relative;
         min-width: 8vw;
         min-height: 3vh;
@@ -277,12 +277,12 @@ html{
         cursor: pointer;
     }
     
-    .main-head-about nav .hamburger div{
+    .main-head nav .hamburger div{
         transition: all 0.15s ease;
     }
-    .main-head-about nav .hamburger .line1,
-    .main-head-about nav .hamburger .line2,
-    .main-head-about nav .hamburger .line3 {
+    .main-head nav .hamburger .line1,
+    .main-head nav .hamburger .line2,
+    .main-head nav .hamburger .line3 {
         position: absolute;
         width: 100%;
         height: 12%;
@@ -290,17 +290,17 @@ html{
         border-radius: 10px;
     }
 
-    .main-head-about nav .hamburger .line1{
+    .main-head nav .hamburger .line1{
         top: 0%;
     }
-    .main-head-about nav .hamburger .line2{
+    .main-head nav .hamburger .line2{
         top: 44%;
     }
-    .main-head-about nav .hamburger .line3{
+    .main-head nav .hamburger .line3{
         top: 88%;
     } 
 
-    .main-head-about nav .nav-links{
+    .main-head nav .nav-links{
         position: absolute;
         font-size: 5vmax;
         top: 14.9vh;
@@ -319,17 +319,17 @@ html{
         z-index: 10;
     }
 
-    .main-head-about nav .nav-links li{
+    .main-head nav .nav-links li{
         position: relative;
         top: -3vh;
         opacity: 0;
     }
 
-    .main-head-about nav .nav-links li a{
+    .main-head nav .nav-links li a{
         font-size: 3.0vmax;
     }
 
-    .main-head-about nav ul .nav-links.open{
+    .main-head nav ul .nav-links.open{
         clip-path: circle(100px at 90% -10%);
         -webkit-clip-path:circle(100px at 90% -10%);
     }
@@ -383,7 +383,7 @@ html{
 
 /* FUNCTIONS FOR JAVASCRIPT */
 
-.main-head-about nav .nav-active{
+.main-head nav .nav-active{
     transform: translateX(0%);
     /* position: fixed; */
 }
