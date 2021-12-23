@@ -1,0 +1,211 @@
+/* Global styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home{
+    background: url(./02_Images/desktop_landingpage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 65%;
+    height: 100vh;
+    position: relative;
+}
+
+.main-head{
+    /* background: blue; */
+    position: relative;
+    top: 0%;
+    min-height: 15vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#name_logo{
+    /* background: chocolate; */
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    position: relative;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+#name{
+    padding: 0rem 1.5rem;
+    font-size: 2.8rem;
+}
+
+
+.section-home{
+    /* background: greenyellow; */
+    color: white;
+    position: relative;
+    top: 0%;
+    min-height: 75vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-home .sectiondiv{
+    position: relative;
+    min-height: 77vh;
+}
+
+.section-home .homedivstop{
+    position: relative;
+    min-height: 38.5vh;
+    padding-top: 2.25rem;
+}
+.section-home .homedivsbottom{
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content: center;
+    min-height: 38.5vh;
+}
+
+.section-home .homedivstop{
+    top: 0%; 
+}
+
+.section-home .homeinfo{
+    /* background: slateblue; */
+    position: relative;
+    width: 80vw;
+    height: auto;
+    display: wrap;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.section-home .homeinfo h2{
+    /* background: white; */
+    font-size: 2.5rem;
+}
+
+.section-home .homeinfo h3{
+    /* background: crimson; */
+    font-size: 1.5rem;
+    padding: 1.25rem;
+}
+
+.section-home .meantime{
+    /* background: darkgreen; */
+    position: relative;
+    width: 80vw;
+    height: auto;
+}
+
+.section-home .meantime h4{
+    /* background: darkkhaki; */
+    font-size: 1.75rem;
+    padding: 2rem;
+}
+
+.section-home .instagram{
+    /* background: darksalmon; */
+    position: relative;
+    width: 80vw;
+    height: auto;
+}
+
+.section-home .instagram img{
+    max-height: 3.75rem;
+}
+
+
+.main-foot{
+    /* background: red; */
+    position: relative;
+    bottom: 0%;
+    min-height: 8vh;
+    width: 100vw;
+    font-size: 0.45rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-foot .name-legal{
+    position: relative;
+}
+
+
+
+
+/* MEDIA QUERIES AND MOBILE/TABLET RESPONSIVENESS */
+
+
+@media only screen and (max-width: 1200px){
+
+    /* FULL WEBSITE */
+
+    html, body{
+        overflow-x: hidden;
+    }
+        
+    /* HOME SECTION */
+    .home{
+        background: url(./02_Images/coming_soon.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 45% 30%;
+        min-height: 100vh;
+    }
+
+    #name{
+        font-size: 4rem;
+    }
+
+    .section-home .homeinfo{
+        width: 90vw;
+    }
+
+    .section-home .homeinfo h2{
+        padding: 2rem;
+        font-size: 3.5rem;
+    }
+    
+    .section-home .homeinfo h3{
+        font-size: 2.5rem;
+    }
+
+    .section-home .meantime h4{
+        font-size: 3.5rem;
+    }
+
+    .section-home .instagram img{
+        max-height: 7rem;
+    }
+    
+    /* FOOTER SECTION */
+
+    .main-foot .name-legal{
+        font-size: 0.85rem;
+        margin: 2rem 0rem;
+    }
+    
+}
